@@ -1,0 +1,35 @@
+ul {
+    list-style-type: none;
+}
+
+h1 {
+    padding: 0 0 0 40px;
+}
+
+.btn-wrapper {
+    display: flex;
+    gap: 10px;
+    margin: 0 0 0 40px;
+}
+
+.btn-add {
+    padding: 10px 15px;
+    background-color: #259925;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+}
+
+.btn-search {
+    padding: 10px 15px;
+    background-color: #138cbf;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+}
+
+.list-active {
+    display: block;
+    background-color: yellow;
+    padding: 0 0 0 10px;
+}

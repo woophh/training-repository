@@ -1,0 +1,121 @@
+.feedback-bubble {
+    display: flex;
+    align-items: flex-end;
+    position: absolute;
+    z-index: 4;
+}
+
+.feedback-bubble__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    padding: 32px 40px; 
+    border-radius: 40px;
+    display: block;
+    color: rgba(255, 255, 255, 0.7);
+    margin: 0;
+}
+
+.feedback-bubble__callout {
+    flex-shrink: 0;
+    position: absolute; 
+}
+
+.feedback__list-item__mascot {
+    position: relative;
+    width: 180px;
+    height: 180px;
+    z-index: 3;
+}
+
+.feedback-bubble--hakki{
+    width: 363px;
+    top: 157px;
+    left: 63px;
+}
+
+.feedback-bubble--hakki > .feedback-bubble__text {
+    background-color: #676A47;
+}
+
+.feedback-bubble--hakki > .feedback-bubble__callout {
+    color: #676A47;
+    right: -17px;
+}
+
+.feedback-bubble--blue {
+    width: 334px;
+    top: 43px;
+    left: 110px;
+}
+
+.feedback-bubble--blue > .feedback-bubble__text {
+    background-color: #243961;
+}
+
+.feedback-bubble--purple {
+    width: 297px;
+    top: 231px;
+    right: 24px;
+}
+
+.feedback-bubble--purple> .feedback-bubble__text {
+    background-color: #61235F;
+}
+
+.feedback-bubble--purple > .feedback-bubble__callout {
+    color: #61235F;
+    left: -17px;
+}
+
+.feedback-bubble--brown {
+    width: 303px;
+    top: 427px;
+}
+
+.feedback-bubble--brown > .feedback-bubble__text {
+    background-color: #62432C;
+}
+
+.feedback-bubble--brown > .feedback-bubble__callout {
+    color: #62432C;
+    right: -17px;
+}
+
+.feedback-bubble--green {
+    width: 283px;
+    bottom: 265px;
+    right: 0;
+}
+
+.feedback-bubble--green > .feedback-bubble__text {
+    background-color: #315C51;
+}
+
+.feedback-bubble--green > .feedback-bubble__callout {
+    color: #315C51;
+    left: -17px;
+}
+
+.feedback-bubble--violet {
+    width: 423px;
+}
+
+.feedback-bubble--violet > .feedback-bubble__text {
+    background-color: #432858;
+}
+
+.feedback-bubble--red {
+    width: 363px;
+    bottom: 62px;
+    right: 212px;
+}
+
+.feedback-bubble--red > .feedback-bubble__text {
+    background-color: #6A2844;
+}
+
+.feedback-bubble--red > .feedback-bubble__callout {
+    color: #6A2844;
+    left: -17px;
+}

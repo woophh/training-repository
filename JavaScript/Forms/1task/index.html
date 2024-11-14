@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form class="form" method="POST">  
+        <h1>Опрос</h1>
+        <label>Имя <input class="name" type="text" name="name" required></label>
+        <label>E-mail <input class="email" type="email" name="email" required></label>
+        <div class="survey__gender">
+            <h2>Пол</h2>
+            <input class="gender" type="radio" name="gender" id="male" value="male">
+            <label for="male">Мужской</label>
+            <input class="gender" type="radio" name="gender" id="female" value="female">
+            <label for="female">Женский</label>
+        </div>
+        <label>Оценка сервиса <input class="evaluation" type="range" name="evaluation" id="evaluation" min="0" max="10"></label>
+        <div class="survey__hobby">
+            <h2>Ваши интересы:</h2>
+            <label><input class="hobby" type="checkbox" name="hobby" id="sport" value="sport"> Спорт </label>
+            <label><input class="hobby" type="checkbox" name="hobby" id="music" value="music"> Музыка</label>
+            <label><input class="hobby" type="checkbox" name="hobby" id="movie" value="movie"> Кино</label>
+            <label><input class="hobby" type="checkbox" name="hobby" id="painting" value="painting"> Живопись</label>
+            <label><input class="hobby" type="checkbox" name="hobby" id="travelling" value="travelling"> Путешествия</label>
+        </div>
+        <label>Дополнительные комментарии: <input class="comment" type="text" name="comment"></label>
+        <button class="btn-submit" type="submit">Отправить</button>
+    </form>
+
+    <div class="results"></div>
+    <script src="index.js"></script>
+</body>
+</html>

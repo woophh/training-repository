@@ -1,0 +1,44 @@
+body {
+    height: 100vh;
+    background-color: #BCBCBC;
+}
+
+.pop-up {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 450px;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    gap: 20px;
+}
+
+img {
+    width: 140px;
+    flex-shrink: 0;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+.tittle {
+    font-size: 20px;
+}
+
+.btn {
+    background-color: #6d83df;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    min-width: 150px;
+    font-weight: 700;
+    font-size: 20px;
+    cursor: pointer;
+}

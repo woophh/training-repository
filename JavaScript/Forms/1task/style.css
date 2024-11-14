@@ -1,0 +1,28 @@
+.survey {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.survey__hobby {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.comment {
+    width: 500px;
+    height: 70px
+}
+
+.results {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+button {
+    width: 200px;
+}

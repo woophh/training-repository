@@ -1,0 +1,41 @@
+.gallery-block {
+  margin: 0 0 80px;
+
+  @include vp-767 {
+    margin: 0 0 60px;
+  }
+
+  &__wrap {
+    display: grid;
+    align-items: start;
+    grid-template-columns: 1fr 215px;
+    gap: 20px;
+
+    @include vp-1023 {
+      gap: 28px;
+      grid-template-columns: auto 180px;
+    }
+
+    @include vp-767 {
+      grid-template-columns: auto;
+      gap: 30px;
+    }
+  }
+
+  &__btn {
+    width: 100%;
+
+    @include vp-1023 {
+      width: 142%;
+    }
+
+    @include vp-767 {
+      width: 100%;
+    }
+  }
+
+  &__btn:hover,
+  &__btn:focus-visible {
+    background-color: $color-white-lilac-2;
+  }
+}

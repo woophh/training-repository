@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Обратная связь - БЕСIT</title>
+  </head>
+  <body>
+    <main>
+      <!-- Обратная связь -->
+      <section class="feedback">
+        <h1 class="visually-hidden">Обратная связь</h1>
+        <div class="container">
+          <div class="feedback__wrapper">
+            <div class="feedback__message__wrapper">
+              <h2 class="feedback__message__logo"><span class="feedback__message__logo-green">БЕС</span>IT</h2>
+              <p class="feedback__message__text">Поделись болью, вопросом 
+                или расскажи миру о том, кто из коллег съел твой йогурт</p>
+                <form class="feedback__message__form" action="#" method="POST">
+                  <div class="custom-textarea">
+                    <textarea class="custom-textarea__field" id="user-message" placeholder="Твоё сообщение ..." 
+                  name="message" rows="1"></textarea>
+                  </div>
+                  <button class="feedback__message__form__btn-send" type="submit" aria-label="Отправить сообщение">
+                    <svg class="feedback__message__form__btn-send__icon" width="24" height="24">
+                      <use xlink:href="images/sprite.svg#icon-send"></use>
+                    </svg>
+                  </button>
+                </form>
+            </div>
+            <ul class="feedback__list">
+              <li class="feedback__list-item">
+                <div class="feedback-bubble feedback-bubble--hakki">
+                  <p class="feedback-bubble__text">Бесит когда дизайнеры 
+                    в&nbsp;10&nbsp;раз правят отступы, после того как я&nbsp;закончил 
+                    править&nbsp;ПП</p>
+                    <svg class="feedback-bubble__callout" width="32" height="40">
+                      <use xlink:href="images/sprite.svg#callout-left"></use>
+                    </svg>
+                </div>
+              </li>
+              <li class="feedback__list-item">
+                <div class="feedback__list-item__wrapper feedback__list-item__wrapper--demon">
+                  <img class="feedback__list-item__mascot" src="images/mascot/mascot-demon.png" 
+                  alt="Эмодзи демона" width="180" height="180">
+                  <div class="feedback-bubble feedback-bubble--blue">
+                    <p class="feedback-bubble__text">Я&nbsp;всю жизнь хотел в&nbsp;IT
+                       и&nbsp;у&nbsp;меня получилось. Но&nbsp;теперь я&nbsp;хочу с&nbsp;кем-то 
+                       об&nbsp;этом поговорить...</p>
+                  </div>
+                </div>
+              </li>
+              <li class="feedback__list-item">
+                <div class="feedback-bubble feedback-bubble--purple">
+                  <p class="feedback-bubble__text">Для тестировщиков есть 
+                    отдельный котёл в&nbsp;аду, я&nbsp;проверяла</p>
+                    <svg class="feedback-bubble__callout" width="32" height="40">
+                      <use xlink:href="images/sprite.svg#callout-right"></use>
+                    </svg>
+                </div>
+              </li>
+              <li class="feedback__list-item">
+                <div class="feedback-bubble feedback-bubble--brown">
+                  <p class="feedback-bubble__text">4&nbsp;часа искать ошибку
+                  в&nbsp;коде, а&nbsp;в&nbsp;итоге найти неправильно написанное
+                  слово &laquo;heigth&raquo;</p>
+                  <svg class="feedback-bubble__callout" width="32" height="40">
+                    <use xlink:href="images/sprite.svg#callout-left"></use>
+                  </svg>
+                </div>
+              </li>
+              <li class="feedback__list-item">
+                <div class="feedback-bubble feedback-bubble--green">
+                  <p class="feedback-bubble__text">Что делать, если я&nbsp;хочу 
+                    быть котиком, но&nbsp;надо идти и&nbsp;писать код?</p>
+                  <svg class="feedback-bubble__callout" width="32" height="40">
+                    <use xlink:href="images/sprite.svg#callout-right"></use>
+                  </svg>
+                </div>
+              </li>
+              <li class="feedback__list-item">
+                <div class="feedback__list-item__wrapper feedback__list-item__wrapper--angry">
+                  <div class="feedback-bubble feedback-bubble--violet">
+                    <p class="feedback-bubble__text">У&nbsp;меня так много 
+                      рабочих созвонов, что может показаться, что я&nbsp;зарабатываю 
+                      не&nbsp;разработкой, а&nbsp;вебкамом</p>
+                  </div>
+                  <img class="feedback__list-item__mascot" src="images/mascot/mascot-angry.png" 
+                      alt="Злой эмодзи" width="180" height="180">
+                </div>
+              </li>
+              <li class="feedback__list-item">
+                <div class="feedback-bubble feedback-bubble--red">
+                  <p class="feedback-bubble__text">Как&nbsp;же бесит Safari 
+                    и&nbsp;его бесконечные баги с&nbsp;анимациями</p>
+                  <svg class="feedback-bubble__callout" width="32" height="40">
+                    <use xlink:href="images/sprite.svg#callout-right"></use>
+                  </svg>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Подвал сайта -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <div class="footer__brand">
+            <a class="footer__logo-link" href="#" aria-label="Переход на главную страницу">
+              <svg class="footer__logo" width="120" height="24">
+                <use xlink:href="images/sprite.svg#icon-logo"></use>
+              </svg>
+            </a>
+            <div class="footer__copyright-wrapper">
+              <svg class="footer__copyright-icon" width="24" height="24">
+                <use xlink:href="images/sprite.svg#icon-copyright"></use>
+              </svg>
+              <span class="footer__copyright-text">Все права защищены и&nbsp;принадлежат народу</span>
+            </div>
+          </div>
+          <div class="footer__subscription">
+              <p class="footer__subscription-text">Читай 
+                подборку по&nbsp;дороге на&nbsp;работу или за&nbsp;чашкой кофе
+              </p>
+              <form class="footer__subscription-form" action="#" method="POST">
+                <div class="custom-input">
+                  <svg class="custom-input-icon" width="20" height="20">
+                    <use xlink:href="images/sprite.svg#icon-mail"></use>
+                  </svg>
+                  <input class="custom-input__field" type="email" 
+                  placeholder="Электронная почта" id="user-email" name="email" required>
+                </div>
+                <button class="footer__subscription-btn" type="submit">
+                  Подписаться
+                </button>
+              </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

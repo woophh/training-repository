@@ -1,0 +1,19 @@
+.list {
+    list-style-type: none;
+}
+
+button {
+    padding: 10px 15px;
+    margin: 10px;
+    border-radius: 8px;
+    border: none;
+    color: #fff;
+}
+
+.btn-add {
+    background-color: #008a32;
+}
+
+.btn-filter {
+    background-color: #c76538;
+}

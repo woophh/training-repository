@@ -1,0 +1,79 @@
+.footer {
+    position: relative;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    z-index: 1;
+    display: flex;
+    align-items: center;
+}
+
+.footer__wrapper {
+    display: flex;
+    padding: 16px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__brand {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.footer__logo {
+    flex-shrink: 0;
+}
+
+.footer__copyright-icon {
+    flex-shrink: 0;
+}
+
+.footer__copyright-wrapper {
+    display: flex;
+    width: 166px;
+    gap: 12px;
+    align-items: center;
+}
+
+.footer__copyright-text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.footer__subscription {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.footer__subscription-text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: right;
+    color: rgba(255, 255, 255, 0.8);
+    width: 230px;
+}
+
+.footer__subscription-form {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.footer__subscription-btn {
+    width: 153px;
+    height: 44px;
+    padding: 12px;
+    background-color: #87F29A;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
