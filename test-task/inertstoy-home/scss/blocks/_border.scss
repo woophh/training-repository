@@ -1,0 +1,19 @@
+.border-top {
+    border: 1px solid $color-alizarin;
+    border-radius: 20px;
+    width: 100%;
+    height: 50px;
+    border-bottom: none;
+    position: absolute;
+
+    &__overlay {
+        background-color: $color-gainsboro-2;
+        width: 101%;
+        height: 30px;
+        position: absolute;
+        right: 50%;
+        transform: translateX(50%);
+        top: 24px;
+        z-index: 1;
+    }
+}

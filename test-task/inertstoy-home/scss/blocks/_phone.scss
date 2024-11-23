@@ -1,0 +1,14 @@
+.phone {
+    display: flex;
+    color: $color-midnight;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 27px;
+    text-align: left;
+    gap: 15px;
+
+    &__number {
+        color: $color-midnight;
+        text-decoration: none;
+    }
+}

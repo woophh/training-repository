@@ -1,0 +1,91 @@
+.header {
+    padding: 30px 0 20px;
+    
+    &__content {
+        display: flex;
+        gap: 46px;
+        width: 100%;
+        margin: 0 0 20px;
+    }
+
+    &__caption {
+        display: flex;
+        flex-direction: column;
+        max-width: 217px;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 23px;
+        text-align: left;
+    }
+
+    &__address {
+        display: flex;
+        max-width: 183px;
+        gap: 7px;
+    }
+
+    &__phone {
+        .phone-1{
+            .phone__icon {
+                margin: 5px 0 0 15px;
+            }
+        }
+        .phone-2{
+            .phone__icon {
+                margin: -4px 0 0 0;
+            }
+        }
+
+        svg {
+            color: #BDBDBD;
+        }
+    }
+
+    &__btn-wrapper {
+        display: flex;
+        gap: 10px;
+    }
+
+    &__fav {
+        background-color: $color-gainsboro;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+    }
+
+    &__cart {
+        background-color: $color-alizarin;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;  
+        position: relative;
+    }
+
+    &__cart::after {
+        content: "0";
+        background-color: $color-white;
+        color: $color-alizarin;
+        width: 18px;
+        height: 18px;
+        font-family: Roboto;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 14.06px;
+        letter-spacing: -0.06em;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: -1%;
+        right: -3%;
+    }
+}

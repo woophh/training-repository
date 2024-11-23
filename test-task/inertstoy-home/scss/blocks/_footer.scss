@@ -1,0 +1,173 @@
+.footer {
+    background-color: $color-gainsboro-2;
+    padding: 40px 0;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+
+    &__top {
+        display: flex;
+        gap: 50px;
+        justify-content: space-between;
+        margin: 0 0 10px;
+    }
+
+    &__heading {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 28px;
+        color: $color-alizarin;
+        margin: 0 0 15px;
+    }
+
+    &__catalog {
+        display: flex;
+        gap: 25px;
+
+        &-list {
+            margin: 0;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 37px;
+            row-gap: 4px;
+            // column-count: 2;
+            padding: 5px 0 0 24px;
+        }
+
+        &-item {
+            // margin: 0 0 4px;
+
+            &__link {
+                color: $color-maire;
+                text-decoration: none;
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 19px;
+            }
+        }
+    }
+
+    &__list {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+            margin: 0 0 7px;
+            a {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 19px;
+                color: $color-maire;
+                text-decoration: none;
+            }
+        }
+    }
+
+    &__contacts &__heading {
+        margin: 0 0 17px;
+    }
+
+    &__phone {
+        margin: 0 0 20px;
+
+        .phone-1 svg {
+          color: $color-mts;  
+        }
+
+        .phone-1 {
+            align-items: center;
+        }
+
+        .phone-2 {
+            align-items: baseline;
+        }
+
+        .phone__number {
+            font-size: 16px;
+            line-height: 22px;
+        }
+    }
+
+    &__email {
+        display: flex;
+        align-items: center;
+        gap: 11px;
+        margin: 0 0 22px;
+
+        &-link {
+            text-decoration: none;
+            color: $color-maire;
+        }
+    }
+ 
+    &__contacts-btn {
+        padding: 18px;
+    }
+
+    &__bottom {
+        position: relative;
+
+        &-content {
+            margin-top: 26px;
+            display: flex;
+            gap: 43px;
+            position: relative;
+            z-index: 2;
+        }
+    }
+
+    
+    &__caption {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 22px;
+        max-width: 187px;
+        margin: 0 0 0 83px;
+    }
+
+    &__address {
+        display: flex;
+        flex-direction: column;
+        margin: 0 0 0 20px;
+
+        &-title {
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 22px;
+        }
+
+        &-text {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 19px;
+        }
+    }
+
+    &__calculation {
+        padding: 15px 17px;
+    }
+
+    &__social-media {
+        display: flex;
+        gap: 9px;
+        margin: 10px 0 8px auto;
+    }
+
+    &__privacy-policy {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+
+        &__link {
+            color: $color-maire;
+        }
+    }
+}

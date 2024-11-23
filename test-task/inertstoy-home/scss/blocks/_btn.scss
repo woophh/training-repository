@@ -1,0 +1,30 @@
+.btn {
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+
+    &-calculation {
+        width: 207px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 11px 17px;
+        text-align: start;
+        background-color: $color-white;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+        text-align: left;
+        color: $color-black;
+    }
+
+    &-red {
+        background-color: $color-alizarin;
+        font-size: 13px;
+        font-weight: 700;
+        line-height: 15px;
+        letter-spacing: 0.08em;
+        color: $color-white;
+        text-transform: uppercase;
+    }
+}
