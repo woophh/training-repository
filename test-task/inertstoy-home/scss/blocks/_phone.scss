@@ -7,8 +7,10 @@
     text-align: left;
     gap: 15px;
 
+
     &__number {
         color: $color-midnight;
         text-decoration: none;
+        min-width: 131px;
     }
 }

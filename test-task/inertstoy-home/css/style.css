@@ -375,10 +375,11 @@ svg {
   display: flex;
   gap: 46px;
   width: 100%;
-  margin: 0 0 20px;
+  margin: 0 0 16px;
 }
 .header__caption {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   max-width: 217px;
   font-size: 20px;
@@ -402,7 +403,7 @@ svg {
 }
 .header__btn-wrapper {
   display: flex;
-  gap: 10px;
+  gap: 13px;
 }
 .header__fav {
   background-color: #E3E3E3;
@@ -450,7 +451,7 @@ svg {
   display: flex;
   background-color: #E6E6E6;
   border-radius: 10px;
-  align-items: center;
+  align-items: flex-end;
   font-size: 13px;
   font-weight: 500;
   line-height: 15px;
@@ -459,8 +460,11 @@ svg {
 }
 .page-nav__list {
   display: flex;
+  flex-wrap: wrap;
   list-style-type: none;
-  gap: 55px;
+  row-gap: 20px;
+  -moz-column-gap: 54px;
+       column-gap: 54px;
   padding: 0;
   margin: 0;
   align-items: center;
@@ -475,6 +479,7 @@ svg {
   background-color: #E93536;
   padding: 10px;
   border-radius: 10px;
+  min-width: 105px;
 }
 .page-nav__item--active .page-nav__item-link {
   color: #ffffff;
@@ -487,7 +492,7 @@ svg {
   color: #1D1D1B;
 }
 .page-nav__price {
-  margin: 0 0 0 auto;
+  margin: auto 0 0 auto;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -497,6 +502,7 @@ svg {
   border-radius: 10px;
   font-weight: 600;
   color: #1D1D1B;
+  min-width: 140px;
 }
 
 .btn {
@@ -540,19 +546,21 @@ svg {
 .phone__number {
   color: #2E363E;
   text-decoration: none;
+  min-width: 131px;
 }
 
 .footer {
   background-color: #DBDBDB;
-  padding: 40px 0;
+  padding: 35px 0 40px;
 }
 .footer__content {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 19px;
 }
 .footer__top {
   display: flex;
+  flex-wrap: wrap;
   gap: 50px;
   justify-content: space-between;
   margin: 0 0 10px;
@@ -569,13 +577,13 @@ svg {
   gap: 25px;
 }
 .footer__catalog-list {
-  margin: 0;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  -moz-column-gap: 37px;
-       column-gap: 37px;
-  row-gap: 4px;
-  padding: 5px 0 0 24px;
+  margin: 6px 0 0;
+  -moz-column-count: 2;
+       column-count: 2;
+  padding: 0 0 0 28px;
+}
+.footer__catalog-item {
+  margin: 0 18px 4px 0;
 }
 .footer__catalog-item__link {
   color: #1D1D1B;
@@ -608,9 +616,6 @@ svg {
 .footer__phone .phone-1 svg {
   color: #E30613;
 }
-.footer__phone .phone-1 {
-  align-items: center;
-}
 .footer__phone .phone-2 {
   align-items: baseline;
 }
@@ -630,6 +635,7 @@ svg {
 }
 .footer__contacts-btn {
   padding: 18px;
+  max-width: 300px;
 }
 .footer__bottom {
   position: relative;
@@ -637,6 +643,7 @@ svg {
 .footer__bottom-content {
   margin-top: 26px;
   display: flex;
+  flex-wrap: wrap;
   gap: 43px;
   position: relative;
   z-index: 2;
@@ -668,6 +675,7 @@ svg {
 }
 .footer__social-media {
   display: flex;
+  flex-wrap: wrap;
   gap: 9px;
   margin: 10px 0 8px auto;
 }

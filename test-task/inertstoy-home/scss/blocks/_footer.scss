@@ -1,16 +1,17 @@
 .footer {
     background-color: $color-gainsboro-2;
-    padding: 40px 0;
+    padding: 35px 0 40px;
 
     &__content {
         display: flex;
         flex-direction: column;
-        gap: 20px;
+        gap: 19px;
     }
 
 
     &__top {
         display: flex;
+        flex-wrap: wrap;
         gap: 50px;
         justify-content: space-between;
         margin: 0 0 10px;
@@ -29,17 +30,13 @@
         gap: 25px;
 
         &-list {
-            margin: 0;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            column-gap: 37px;
-            row-gap: 4px;
-            // column-count: 2;
-            padding: 5px 0 0 24px;
+            margin: 6px 0 0;
+            column-count: 2;
+            padding: 0 0 0 28px;
         }
 
         &-item {
-            // margin: 0 0 4px;
+            margin: 0 18px 4px 0;
 
             &__link {
                 color: $color-maire;
@@ -79,10 +76,6 @@
           color: $color-mts;  
         }
 
-        .phone-1 {
-            align-items: center;
-        }
-
         .phone-2 {
             align-items: baseline;
         }
@@ -107,6 +100,7 @@
  
     &__contacts-btn {
         padding: 18px;
+        max-width: 300px;
     }
 
     &__bottom {
@@ -115,6 +109,7 @@
         &-content {
             margin-top: 26px;
             display: flex;
+            flex-wrap: wrap;
             gap: 43px;
             position: relative;
             z-index: 2;
@@ -154,6 +149,7 @@
 
     &__social-media {
         display: flex;
+        flex-wrap: wrap;
         gap: 9px;
         margin: 10px 0 8px auto;
     }

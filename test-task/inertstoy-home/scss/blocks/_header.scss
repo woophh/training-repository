@@ -5,11 +5,12 @@
         display: flex;
         gap: 46px;
         width: 100%;
-        margin: 0 0 20px;
+        margin: 0 0 16px;
     }
 
     &__caption {
         display: flex;
+        flex-wrap: wrap;
         flex-direction: column;
         max-width: 217px;
         font-size: 20px;
@@ -43,7 +44,7 @@
 
     &__btn-wrapper {
         display: flex;
-        gap: 10px;
+        gap: 13px;
     }
 
     &__fav {
