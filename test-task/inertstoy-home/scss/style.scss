@@ -6,6 +6,7 @@
 @import "global/_nomilize";
 @import "global/_reboot";
 @import "global/_container";
+@import "global/_vissualy-hidden";
 
 
 /* Blocks */
@@ -17,3 +18,5 @@
 @import "blocks/_phone";
 @import "blocks/_footer";
 @import "blocks/_border";
+@import "blocks/_banner";
+@import "blocks/swiper";

@@ -359,6 +359,11 @@ svg {
   flex-shrink: 0;
 }
 
+a {
+  text-decoration: none;
+  color: #1D1D1B;
+}
+
 .container {
   width: 100%;
   max-width: 1320px;
@@ -366,10 +371,25 @@ svg {
   padding: 0 20px;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  border: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+}
+
 /* Blocks */
 /* ------------------------------------ */
 .header {
   padding: 30px 0 20px;
+  margin: 0 0 20px;
 }
 .header__content {
   display: flex;
@@ -488,8 +508,6 @@ svg {
   display: flex;
   gap: 6px;
   align-items: center;
-  text-decoration: none;
-  color: #1D1D1B;
 }
 .page-nav__price {
   margin: auto 0 0 auto;
@@ -498,10 +516,8 @@ svg {
   gap: 10px;
   background-color: #ffffff;
   padding: 10px;
-  text-decoration: none;
   border-radius: 10px;
   font-weight: 600;
-  color: #1D1D1B;
   min-width: 140px;
 }
 
@@ -509,6 +525,7 @@ svg {
   border: none;
   border-radius: 10px;
   text-align: center;
+  cursor: pointer;
 }
 .btn-calculation {
   width: 207px;
@@ -545,7 +562,6 @@ svg {
 }
 .phone__number {
   color: #2E363E;
-  text-decoration: none;
   min-width: 131px;
 }
 
@@ -586,8 +602,6 @@ svg {
   margin: 0 18px 4px 0;
 }
 .footer__catalog-item__link {
-  color: #1D1D1B;
-  text-decoration: none;
   font-size: 16px;
   font-weight: 700;
   line-height: 19px;
@@ -604,8 +618,6 @@ svg {
   font-size: 16px;
   font-weight: 400;
   line-height: 19px;
-  color: #1D1D1B;
-  text-decoration: none;
 }
 .footer__contacts .footer__heading {
   margin: 0 0 17px;
@@ -628,10 +640,6 @@ svg {
   align-items: center;
   gap: 11px;
   margin: 0 0 22px;
-}
-.footer__email-link {
-  text-decoration: none;
-  color: #1D1D1B;
 }
 .footer__contacts-btn {
   padding: 18px;
@@ -688,7 +696,7 @@ svg {
   gap: 2px;
 }
 .footer__privacy-policy__link {
-  color: #1D1D1B;
+  text-decoration: underline;
 }
 
 .border-top {
@@ -708,4 +716,53 @@ svg {
   transform: translateX(50%);
   top: 24px;
   z-index: 1;
+}
+
+.banner {
+  background-image: url("../image/banner-crushed-stone.png");
+  background-size: cover;
+  padding: 50px;
+  border-radius: 20px;
+}
+.banner-wrapper {
+  margin: 0 0 50px;
+}
+.banner__content {
+  padding: 30px;
+  margin: 0 auto 0 0;
+  max-width: 550px;
+  background-color: #ffffff;
+  border-radius: 20px;
+}
+.banner__heading {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 50px;
+  margin: 0 0 17px;
+}
+.banner__list {
+  margin: 0 0 30px;
+  padding: 0 0 0 25px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  -moz-column-gap: 60px;
+       column-gap: 60px;
+}
+.banner__list-item {
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 35px;
+}
+.banner__btn {
+  width: 100%;
+  padding: 17px;
+}
+
+.swiper {
+  width: 1280px;
+  height: 430px;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: red;
 }/*# sourceMappingURL=style.css.map */

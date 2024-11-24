@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <title>Нерудные материалы по ГОСТУ - Интерстрой</title>
 
     <link rel="stylesheet" href="css/style.css">
@@ -111,9 +115,51 @@
         </div>
     </header>
     <main>
-
-    <!-- Контент страницы-->
-
+        <h1 class="visually-hidden ">Домашняя страница Инертстрой</h1>
+        <section class="banner-wrapper">
+            <div class="container">
+                <div class="banner__slider  swiper">
+                    <div class="swiper-wrapper">
+                        <div class="banner swiper-slide">
+                            <div class="banner__content">
+                                <h2 class="banner__heading">Закажите щебень со&nbsp;скидкой&nbsp;10%</h2>
+                                <ul class="banner__list">
+                                    <li class="banner__list-item">Диоритовый</li>
+                                    <li class="banner__list-item">Мраморный</li>
+                                    <li class="banner__list-item">Белогорский</li>
+                                    <li class="banner__list-item">Ароматный</li>
+                                </ul>
+                                <button class="banner__btn btn btn-red">Узнать цены</button>
+                            </div>
+                        </div>
+                        <div class="banner swiper-slide">
+                            <div class="banner__content">
+                                <h2 class="banner__heading">Закажите щебень со&nbsp;скидкой&nbsp;10%</h2>
+                                <ul class="banner__list">
+                                    <li class="banner__list-item">Диоритовый</li>
+                                    <li class="banner__list-item">Мраморный</li>
+                                    <li class="banner__list-item">Белогорский</li>
+                                    <li class="banner__list-item">Ароматный</li>
+                                </ul>
+                                <button class="banner__btn btn btn-red">Узнать цены</button>
+                            </div>
+                        </div>
+                        <div class="banner swiper-slide">
+                            <div class="banner__content">
+                                <h2 class="banner__heading">Закажите щебень со&nbsp;скидкой&nbsp;10%</h2>
+                                <ul class="banner__list">
+                                    <li class="banner__list-item">Диоритовый</li>
+                                    <li class="banner__list-item">Мраморный</li>
+                                    <li class="banner__list-item">Белогорский</li>
+                                    <li class="banner__list-item">Ароматный</li>
+                                </ul>
+                                <button class="banner__btn btn btn-red">Узнать цены</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer class="footer">
         <div class="container">
@@ -267,12 +313,16 @@
                             </button>
                         </div>
                         <div class="footer__social-media">
-                            <svg class="footer__social-media__icon" width="50" height="50" aria-hidden="true">
-                                <use xlink:href="image/sprite.svg#icon-whatsapp"></use>
-                            </svg>
-                            <svg class="footer__social-media__icon" width="50" height="50" aria-hidden="true">
-                                <use xlink:href="image/sprite.svg#icon-vk"></use>
-                            </svg>
+                            <a href="#" class="footer__social-media__link">
+                                <svg class="footer__social-media__icon" width="50" height="50" aria-hidden="true">
+                                    <use xlink:href="image/sprite.svg#icon-whatsapp"></use>
+                                </svg>
+                            </a>
+                            <a href="#" class="footer__social-media__link">
+                                <svg class="footer__social-media__icon" width="50" height="50" aria-hidden="true">
+                                    <use xlink:href="image/sprite.svg#icon-vk"></use>
+                                </svg>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -287,5 +337,7 @@
             </div>
         </div>
     </footer>
+
+    <script src="index.js"></script>
 </body>
 </html>

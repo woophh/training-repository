@@ -39,8 +39,6 @@
             margin: 0 18px 4px 0;
 
             &__link {
-                color: $color-maire;
-                text-decoration: none;
                 font-size: 16px;
                 font-weight: 700;
                 line-height: 19px;
@@ -59,8 +57,6 @@
                 font-size: 16px;
                 font-weight: 400;
                 line-height: 19px;
-                color: $color-maire;
-                text-decoration: none;
             }
         }
     }
@@ -91,11 +87,6 @@
         align-items: center;
         gap: 11px;
         margin: 0 0 22px;
-
-        &-link {
-            text-decoration: none;
-            color: $color-maire;
-        }
     }
  
     &__contacts-btn {
@@ -163,7 +154,7 @@
         gap: 2px;
 
         &__link {
-            color: $color-maire;
+            text-decoration: underline;
         }
     }
 }

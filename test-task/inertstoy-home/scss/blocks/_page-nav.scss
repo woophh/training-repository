@@ -44,8 +44,6 @@
             display: flex;
             gap: 6px;
             align-items: center;
-            text-decoration: none;
-            color: $color-maire;
         }
     }
 
@@ -56,10 +54,8 @@
         gap: 10px;
         background-color: $color-white;
         padding: 10px;
-        text-decoration: none;
         border-radius: 10px;
         font-weight: 600;
-        color: $color-maire;
         min-width: 140px;
     }
 }
