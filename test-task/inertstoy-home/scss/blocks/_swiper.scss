@@ -1,8 +1,37 @@
 .swiper {
     width: 1280px;
     height: 430px;
-}
 
-// .swiper-pagination-bullet-active {
-//     background-color: red;
-// }
+    &-pagination-bullet {
+        background-color: $color-white;
+        opacity: 1;
+        width: 20px;
+        height: 20px;
+        margin: 0 7px!important
+    }
+
+    &-pagination-bullet-active {
+        background-color: $color-alizarin;
+    }
+
+    &-button-next, 
+    &-button-prev {
+        color: $color-white;
+    }
+
+    &-button-next::after, 
+    &-button-prev::after {
+        content: "";
+        width: 39px;
+        height: 80px;
+        background-color: $color-maire;
+        filter: blur(20px);
+        opacity: 0.4;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;   
+    }
+}
