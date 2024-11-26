@@ -1,26 +1,5 @@
 /* Global */
 /* ------------------------------------ */
-@font-face {
-  font-family: "Roboto";
-  src: url("../../fonts/Roboto-Regular.woff2") format("woff2"), url("../../fonts/Roboto-Regular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Roboto";
-  src: url("../../fonts/Roboto-Medium.woff2") format("woff2"), url("../../fonts/Roboto-Medium.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Roboto";
-  src: url("../../fonts/Roboto-Bold.woff2") format("woff2"), url("../../fonts/Roboto-Bold.woff") format("woff");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
   ========================================================================== */
@@ -364,6 +343,13 @@ a {
   color: #1D1D1B;
 }
 
+h2 {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 50px;
+  margin: 0;
+}
+
 .container {
   width: 100%;
   max-width: 1320px;
@@ -550,6 +536,15 @@ a {
   color: #ffffff;
   text-transform: uppercase;
 }
+.btn-border {
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 15.23px;
+  border: 1px solid #E93536;
+  padding: 17px;
+  color: #E93536;
+  text-transform: uppercase;
+}
 
 .phone {
   display: flex;
@@ -562,7 +557,7 @@ a {
 }
 .phone__number {
   color: #2E363E;
-  min-width: 131px;
+  min-width: 147px;
 }
 
 .footer {
@@ -735,9 +730,6 @@ a {
   border-radius: 20px;
 }
 .banner__heading {
-  font-size: 48px;
-  font-weight: 600;
-  line-height: 50px;
   margin: 0 0 17px;
 }
 .banner__list {
@@ -763,6 +755,46 @@ a {
   height: 430px;
 }
 
-.swiper-pagination-bullet-active {
-  background-color: red;
+.catalog-wrapper {
+  margin: 0 0 50px;
+}
+.catalog__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  margin: 0 0 30px;
+}
+.catalog__header__link {
+  min-width: 186px;
+}
+.catalog__list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  -moz-column-gap: 25px;
+       column-gap: 25px;
+  row-gap: 15px;
+}
+.catalog__list-item {
+  border-radius: 10px;
+}
+.catalog__list-item__link {
+  display: block;
+  position: relative;
+}
+.catalog__list-item__name {
+  position: absolute;
+  top: 6%;
+  left: 4%;
+  border-radius: 10px;
+  background-color: #ffffff;
+  padding: 3px 10px;
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 30px;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */

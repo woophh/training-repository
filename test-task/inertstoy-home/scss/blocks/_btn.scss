@@ -28,4 +28,14 @@
         color: $color-white;
         text-transform: uppercase;
     }
+
+    &-border {
+        font-size: 13px;
+        font-weight: 700;
+        line-height: 15.23px;
+        border: 1px solid $color-alizarin;
+        padding: 17px;
+        color: $color-alizarin;
+        text-transform: uppercase;
+    }
 }
