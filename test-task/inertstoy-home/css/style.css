@@ -730,15 +730,15 @@ h2 {
   border-radius: 20px;
 }
 .banner__heading {
-  margin: 0 0 17px;
+  margin: 0 0 19px;
 }
 .banner__list {
   margin: 0 0 30px;
   padding: 0 0 0 25px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  -moz-column-gap: 60px;
-       column-gap: 60px;
+  -moz-column-gap: 63px;
+       column-gap: 63px;
 }
 .banner__list-item {
   font-size: 30px;
@@ -766,6 +766,10 @@ h2 {
 }
 .swiper-button-next, .swiper-button-prev {
   color: #ffffff;
+}
+.swiper-button-next svg, .swiper-button-prev svg {
+  width: 50px;
+  height: 50px;
 }
 .swiper-button-next::after, .swiper-button-prev::after {
   content: "";
