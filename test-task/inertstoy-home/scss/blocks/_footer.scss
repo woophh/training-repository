@@ -105,7 +105,14 @@
             position: relative;
             z-index: 2;
         }
+
+        .border-top__overlay {
+            background-color: $color-gainsboro-2;
+            height: 30px;
+        }
     }
+
+
 
     
     &__caption {
