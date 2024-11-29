@@ -11,5 +11,20 @@
     &__number {
         color: $color-midnight;
         min-width: 147px;
+        white-space: nowrap;
+    }
+
+    &--1 {
+        .phone__icon {
+            width: 48px;
+            height: 13px;
+        }
+    }
+
+    &--2 {
+        .phone__icon {
+            width: 63px;
+            height: 25px;
+        }
     }
 }

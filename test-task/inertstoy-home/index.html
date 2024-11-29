@@ -10,13 +10,6 @@
     />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
-
     <title>Нерудные материалы по ГОСТУ - Интерстрой</title>
 
     <link rel="stylesheet" href="css/style.css" />
@@ -25,15 +18,8 @@
     <header class="header">
       <div class="container">
         <div class="header__content">
-          <a href="#" class="header__logo-link">
-            <svg
-              class="header__logo-icon"
-              width="108"
-              height="70"
-              aria-hidden="true"
-            >
-              <use xlink:href="image/sprite.svg#icon-logo"></use>
-            </svg>
+          <a href="#" class="header__logo-link" aria-label="На главную страницу">
+            <img class="header__logo-img" src="image/sprite/icon-logo.svg" alt="Логотип компании">
           </a>
           <div class="header__caption">
             <span class="header__caption-materials"
@@ -45,28 +31,15 @@
           </div>
           <div class="header__calculation-wrapper">
             <button class="header__calculation btn btn-calculation">
-              <svg
-                class="btn-calculation__icon"
-                width="29"
-                height="34"
-                aria-hidden="true"
-              >
-                <use xlink:href="image/sprite.svg#icon-calculator"></use>
-              </svg>
-              <span class="btn-calculation__caption"
-                >Рассчет стройматериалов</span
-              >
+              <img src="image/sprite/icon-calculator.svg" alt="Иконка калькулятора" 
+              class="btn-calculation__icon" aria-hidden="true">
+              <span class="btn-calculation__caption">
+                Рассчет стройматериалов
+                </span>
             </button>
           </div>
           <div class="header__address">
-            <svg
-              class="header__address-icon"
-              width="24"
-              height="24"
-              aria-hidden="true"
-            >
-              <use xlink:href="image/sprite.svg#icon-pin"></use>
-            </svg>
+            <img class="header__address-icon" src="image/sprite/icon-pin.svg" alt="Иконка маркера" aria-hidden="true">
             <span class="header__address-caption">
               г.&nbsp;Симферополь, ул.&nbsp;Крылова, 164 По&nbsp;будням
               с&nbsp;9&nbsp;до&nbsp;18</span
@@ -87,14 +60,7 @@
               >
             </div>
             <div class="phone phone-2">
-              <svg
-                class="phone__icon"
-                width="63"
-                height="25"
-                aria-hidden="true"
-              >
-                <use xlink:href="image/sprite.svg#icon-volna"></use>
-              </svg>
+              <img class="phone__icon" src="image/sprite/icon-volna.svg" alt="Волна">
               <a href="tel:89780950003" class="phone__number"
                 >+7&nbsp;978&nbsp;095-00-03</a
               >
@@ -102,24 +68,10 @@
           </div>
           <div class="header__btn-wrapper">
             <a href="#" class="header__fav" aria-label="Избранное">
-              <svg
-                class="header__fav-icon"
-                width="30"
-                height="30"
-                aria-hidden="true"
-              >
-                <use xlink:href="image/sprite.svg#icon-fav"></use>
-              </svg>
+              <img class="header__fav-icon" src="image/sprite/icon-fav.svg" alt="Избранное">
             </a>
             <a href="#" class="header__cart" aria-label="Корзина">
-              <svg
-                class="header__cart-icon"
-                width="34"
-                height="34"
-                aria-hidden="true"
-              >
-                <use xlink:href="image/sprite.svg#icon-cart"></use>
-              </svg>
+              <img class="header__cart-icon" src="image/sprite/icon-cart.svg" alt="Корзина">
             </a>
           </div>
         </div>
@@ -127,14 +79,8 @@
           <ul class="page-nav__list">
             <li class="page-nav__item page-nav__item--active">
               <a href="#" class="page-nav__item-link">
-                <svg
-                  class="page-nav__item-icon"
-                  width="14"
-                  height="14"
-                  aria-hidden="true"
-                >
-                  <use xlink:href="image/sprite.svg#icon-catalog"></use>
-                </svg>
+                <img class="page-nav__item-icon" src="image/sprite/icon-catalog.svg" 
+                alt="Иконка каталога" aria-hidden="true">
                 Каталог
               </a>
             </li>
@@ -158,27 +104,15 @@
             </li>
             <li class="page-nav__item">
               <a href="#" class="page-nav__item-link">
-                <svg
-                  class="page-nav__item-icon"
-                  width="20"
-                  height="20"
-                  aria-hidden="true"
-                >
-                  <use xlink:href="image/sprite.svg#icon-magnifying"></use>
-                </svg>
+                <img class="page-nav__item-icon page-nav__item-icon--big" src="image/sprite/icon-magnifying.svg" 
+                alt="Лупа" aria-hidden="true">
                 Поиск
               </a>
             </li>
           </ul>
           <a href="#" class="page-nav__price" download>
-            <svg
-              class="page-nav__price-icon"
-              width="14"
-              height="14"
-              aria-hidden="true"
-            >
-              <use xlink:href="image/sprite.svg#icon-download"></use>
-            </svg>
+            <img class="page-nav__price-icon" src="image/sprite/icon-download.svg" 
+            alt="Скачать">
             Прайс-лист
           </a>
         </nav>
@@ -263,14 +197,10 @@
             </div>
             <div class="swiper-pagination"></div>
             <div class="swiper-button-prev">
-              <svg width="50" height="50" aria-hidden="true">
-                <use xlink:href="image/sprite.svg#arrow-prev"></use>
-              </svg>
+              <img src="image/sprite/arrow-prev.svg" alt="Назад">
             </div>
             <div class="swiper-button-next">
-              <svg width="50" height="50" aria-hidden="true">
-                <use xlink:href="image/sprite.svg#arrow-next"></use>
-              </svg>
+              <img src="image/sprite/arrow-next.svg" alt="Следующее">
             </div>
           </div>
         </div>
@@ -291,6 +221,7 @@
                   src="image/catalog/crushed-stone.png"
                   width="236"
                   height="164"
+                  alt="Щебень"
                 />
                 <span class="catalog__list-item__name">Щебень</span>
               </a>
@@ -302,6 +233,7 @@
                   src="image/catalog/sift.png"
                   width="236"
                   height="164"
+                  alt="Отсев"
                 />
                 <span class="catalog__list-item__name">Отсев</span>
               </a>
@@ -313,6 +245,7 @@
                   src="image/catalog/bute-stone.png"
                   width="236"
                   height="164"
+                  alt="Бут"
                 />
                 <span class="catalog__list-item__name">Бут</span>
               </a>
@@ -324,6 +257,7 @@
                   src="image/catalog/sand.png"
                   width="236"
                   height="164"
+                  alt="Песок"
                 />
                 <span class="catalog__list-item__name">Песок</span>
               </a>
@@ -335,6 +269,7 @@
                   src="image/catalog/cerazmit.png"
                   width="236"
                   height="164"
+                  alt="Керамзит"
                 />
                 <span class="catalog__list-item__name">Керамзит</span>
               </a>
@@ -346,6 +281,7 @@
                   src="image/catalog/fruit-soil.png"
                   width="236"
                   height="164"
+                  alt="Плод. грунт"
                 />
                 <span class="catalog__list-item__name">Плод. грунт</span>
               </a>
@@ -357,6 +293,7 @@
                   src="image/catalog/aerated-concrete.png"
                   width="236"
                   height="164"
+                  alt="Газобетон"
                 />
                 <span class="catalog__list-item__name">Газобетон</span>
               </a>
@@ -368,6 +305,7 @@
                   src="image/catalog/shell-stone.png"
                   width="236"
                   height="164"
+                  alt="Ракушка"
                 />
                 <span class="catalog__list-item__name">Ракушка</span>
               </a>
@@ -379,6 +317,7 @@
                   src="image/catalog/brick.png"
                   width="236"
                   height="164"
+                  alt="Кирпич"
                 />
                 <span class="catalog__list-item__name">Кирпич</span>
               </a>
@@ -390,6 +329,7 @@
                   src="image/catalog/stone-chips.png"
                   width="236"
                   height="164"
+                  alt="Крошка"
                 />
                 <span class="catalog__list-item__name">Крошка</span>
               </a>
@@ -401,6 +341,7 @@
                   src="image/catalog/sift.png"
                   width="236"
                   height="164"
+                  alt="Цемент"
                 />
                 <span class="catalog__list-item__name">Цемент</span>
               </a>
@@ -412,6 +353,7 @@
                   src="image/catalog/tarsa.png"
                   width="236"
                   height="164"
+                  alt="Тырса"
                 />
                 <span class="catalog__list-item__name">Тырса</span>
               </a>
@@ -423,6 +365,7 @@
                   src="image/catalog/blend.png"
                   width="236"
                   height="164"
+                  alt="Смеси"
                 />
                 <span class="catalog__list-item__name">Смеси</span>
               </a>
@@ -434,6 +377,7 @@
                   src="image/catalog/concrete-mesh.png"
                   width="236"
                   height="164"
+                  alt="Сетка (бетон)"
                 />
                 <span class="catalog__list-item__name">Сетка (бетон)</span>
               </a>
@@ -445,6 +389,7 @@
                   src="image/catalog/concentrate.png"
                   width="236"
                   height="164"
+                  alt="Концентрат"
                 />
                 <span class="catalog__list-item__name">Концентрат</span>
               </a>
@@ -460,52 +405,52 @@
               >Все услуги</a
             >
           </div>
-          <ul class="services__list">
-            <li class="services__list-item">
-              <h3 class="services__list-item__headinng">Доставка</h3>
-              <span class="services__list-item__caption"
+          <div class="services__wrapper">
+            <div class="services__card">
+              <h3 class="services__card__headinng">Доставка</h3>
+              <span class="services__card__caption"
                 >Рассчитывается индивидуально.<br />
                 Цена ниже при оптовых заказах</span
               >
-              <a href="#" class="services__list-item__link btn btn-red"
+              <a href="#" class="services__card__link btn btn-red"
                 >узнать условия</a
               >
               <img
-                class="services__list-item__img services__list-item__img--1"
+                class="services__card__img services__card__img--1"
                 src="image/delivery.png"
                 alt="Изображение грузовика"
               />
-            </li>
-            <li class="services__list-item">
-              <h3 class="services__list-item__headinng">Вывоз грунта</h3>
-              <span class="services__list-item__caption"
+            </div>
+            <div class="services__card">
+              <h3 class="services__card__headinng">Вывоз грунта</h3>
+              <span class="services__card__caption"
                 >Рассчитывается индивидуально.<br />Цена ниже при оптовых
                 заказах</span
               >
-              <a href="#" class="services__list-item__link btn btn-red"
+              <a href="#" class="services__card__link btn btn-red"
                 >узнать условия</a
               >
               <img
-                class="services__list-item__img services__list-item__img--2"
+                class="services__card__img services__card__img--2"
                 src="image/soil-removal.png"
                 alt="Изображение эскаватора"
               />
-            </li>
-            <li class="services__list-item services__list-item--flat">
-              <h3 class="services__list-item__headinng">Аренда спецтехники</h3>
-              <span class="services__list-item__caption"
+            </div>
+            <div class="services__card services__card--flat">
+              <h3 class="services__card__headinng">Аренда спецтехники</h3>
+              <span class="services__card__caption"
                 >Стоимость от 300 руб/час
               </span>
-              <a href="#" class="services__list-item__link btn btn-red"
+              <a href="#" class="services__card__link btn btn-red"
                 >Посмотреть автопарк</a
               >
               <img
-                class="services__list-item__img services__list-item__img--3"
+                class="services__card__img services__card__img--3"
                 src="image/rental.png"
                 alt="Изображение эскаватора"
               />
-            </li>
-          </ul>
+            </div>
+          </div>
         </div>
       </section>
       <section class="about">
@@ -618,38 +563,20 @@
                   >Щебень Белогорский фракция 5-20&nbsp;мм</span
                 >
                 <span class="top__catalog__product-card__availability">
-                  <svg
-                    class="top__catalog__product-card__availability-icon"
-                    width="18"
-                    height="18"
-                    aria-hidden="true"
-                  >
-                    <use xlink:href="image/sprite.svg#icon-check"></use>
-                  </svg>
+                  <img class="top__catalog__product-card__availability-icon"
+                  src="image/sprite/icon-check.svg" alt="В наличии" aria-hidden="true">
                   В наличии
                 </span>
               </div>
               <div class="top__catalog__product-card__bottom">
                 <button class="top__catalog__product-card__cart btn btn-red">
-                  <svg
-                    class="top__catalog__product-card__cart-icon"
-                    width="24"
-                    height="24"
-                    aria-hidden="true"
-                  >
-                    <use xlink:href="image/sprite.svg#icon-cart"></use>
-                  </svg>
-                  В&nbsp;корзину
+                  <img class="top__catalog__product-card__cart-icon" 
+                  src="image/sprite/icon-cart.svg" alt="Корзина" aria-hidden="true">
+                  <span class="top__catalog__product-card__cart-text">В&nbsp;корзину</span>
                 </button>
                 <button class="top__catalog__product-card__fav btn">
-                  <svg
-                    class="top__catalog__product-card__cart-icon"
-                    width="24"
-                    height="24"
-                    aria-hidden="true"
-                  >
-                    <use xlink:href="image/sprite.svg#icon-fav"></use>
-                  </svg>
+                  <img class="top__catalog__product-card__cart-icon" 
+                  src="image/sprite/icon-fav.svg" alt="В избранное">
                 </button>
               </div>
             </div>
@@ -669,38 +596,20 @@
                   >Щебень Белогорский фракция 5-20&nbsp;мм</span
                 >
                 <span class="top__catalog__product-card__availability">
-                  <svg
-                    class="top__catalog__product-card__availability-icon"
-                    width="18"
-                    height="18"
-                    aria-hidden="true"
-                  >
-                    <use xlink:href="image/sprite.svg#icon-check"></use>
-                  </svg>
+                  <img class="top__catalog__product-card__availability-icon"
+                  src="image/sprite/icon-check.svg" alt="В наличии" aria-hidden="true">
                   В наличии
                 </span>
               </div>
               <div class="top__catalog__product-card__bottom">
                 <button class="top__catalog__product-card__cart btn btn-red">
-                  <svg
-                    class="top__catalog__product-card__cart-icon"
-                    width="24"
-                    height="24"
-                    aria-hidden="true"
-                  >
-                    <use xlink:href="image/sprite.svg#icon-cart"></use>
-                  </svg>
-                  В&nbsp;корзину
+                  <img class="top__catalog__product-card__cart-icon" 
+                  src="image/sprite/icon-cart.svg" alt="Корзина" aria-hidden="true">
+                  <span class="top__catalog__product-card__cart-text">В&nbsp;корзину</span>
                 </button>
                 <button class="top__catalog__product-card__fav btn">
-                  <svg
-                    class="top__catalog__product-card__cart-icon"
-                    width="24"
-                    height="24"
-                    aria-hidden="true"
-                  >
-                    <use xlink:href="image/sprite.svg#icon-fav"></use>
-                  </svg>
+                  <img class="top__catalog__product-card__cart-icon" 
+                  src="image/sprite/icon-fav.svg" alt="В избранное">
                 </button>
               </div>
             </div>
@@ -720,38 +629,20 @@
                   >Щебень Белогорский фракция 5-20&nbsp;мм</span
                 >
                 <span class="top__catalog__product-card__availability">
-                  <svg
-                    class="top__catalog__product-card__availability-icon"
-                    width="18"
-                    height="18"
-                    aria-hidden="true"
-                  >
-                    <use xlink:href="image/sprite.svg#icon-check"></use>
-                  </svg>
+                  <img class="top__catalog__product-card__availability-icon"
+                  src="image/sprite/icon-check.svg" alt="В наличии" aria-hidden="true">
                   В наличии
                 </span>
               </div>
               <div class="top__catalog__product-card__bottom">
                 <button class="top__catalog__product-card__cart btn btn-red">
-                  <svg
-                    class="top__catalog__product-card__cart-icon"
-                    width="24"
-                    height="24"
-                    aria-hidden="true"
-                  >
-                    <use xlink:href="image/sprite.svg#icon-cart"></use>
-                  </svg>
-                  В&nbsp;корзину
+                  <img class="top__catalog__product-card__cart-icon" 
+                  src="image/sprite/icon-cart.svg" alt="Корзина" aria-hidden="true">
+                  <span class="top__catalog__product-card__cart-text">В&nbsp;корзину</span>
                 </button>
                 <button class="top__catalog__product-card__fav btn">
-                  <svg
-                    class="top__catalog__product-card__cart-icon"
-                    width="24"
-                    height="24"
-                    aria-hidden="true"
-                  >
-                    <use xlink:href="image/sprite.svg#icon-fav"></use>
-                  </svg>
+                  <img class="top__catalog__product-card__cart-icon" 
+                  src="image/sprite/icon-fav.svg" alt="В избранное">
                 </button>
               </div>
             </div>
@@ -771,38 +662,20 @@
                   >Щебень Белогорский фракция 5-20&nbsp;мм</span
                 >
                 <span class="top__catalog__product-card__availability">
-                  <svg
-                    class="top__catalog__product-card__availability-icon"
-                    width="18"
-                    height="18"
-                    aria-hidden="true"
-                  >
-                    <use xlink:href="image/sprite.svg#icon-check"></use>
-                  </svg>
+                  <img class="top__catalog__product-card__availability-icon"
+                  src="image/sprite/icon-check.svg" alt="В наличии" aria-hidden="true">
                   В наличии
                 </span>
               </div>
               <div class="top__catalog__product-card__bottom">
                 <button class="top__catalog__product-card__cart btn btn-red">
-                  <svg
-                    class="top__catalog__product-card__cart-icon"
-                    width="24"
-                    height="24"
-                    aria-hidden="true"
-                  >
-                    <use xlink:href="image/sprite.svg#icon-cart"></use>
-                  </svg>
-                  В&nbsp;корзину
+                  <img class="top__catalog__product-card__cart-icon" 
+                  src="image/sprite/icon-cart.svg" alt="Корзина" aria-hidden="true">
+                  <span class="top__catalog__product-card__cart-text">В&nbsp;корзину</span>
                 </button>
                 <button class="top__catalog__product-card__fav btn">
-                  <svg
-                    class="top__catalog__product-card__cart-icon"
-                    width="24"
-                    height="24"
-                    aria-hidden="true"
-                  >
-                    <use xlink:href="image/sprite.svg#icon-fav"></use>
-                  </svg>
+                  <img class="top__catalog__product-card__cart-icon" 
+                  src="image/sprite/icon-fav.svg" alt="В избранное">
                 </button>
               </div>
             </div>
@@ -998,41 +871,20 @@
               <h3 class="footer__heading">Контакты</h3>
               <div class="footer__phone phone-wrapper">
                 <div class="phone phone-1">
-                  <svg
-                    class="phone__icon"
-                    width="48"
-                    height="15"
-                    aria-hidden="true"
-                  >
-                    <use xlink:href="image/sprite.svg#icon-mts"></use>
-                  </svg>
+                  <img class="phone__icon" src="image/sprite/icon-mts.svg" alt="МТС">
                   <a href="tel:89780950004" class="phone__number"
-                    >+7&nbsp;978&nbsp;095-00-04</a
+                    >+7 978 095-00-04</a
                   >
                 </div>
                 <div class="phone phone-2">
-                  <svg
-                    class="phone__icon"
-                    width="63"
-                    height="25"
-                    aria-hidden="true"
-                  >
-                    <use xlink:href="image/sprite.svg#icon-volna-color"></use>
-                  </svg>
+                  <img class="phone__icon" src="image/sprite/icon-volna-color.svg" alt="Волна">
                   <a href="tel:89780950003" class="phone__number"
-                    >+7&nbsp;978&nbsp;095-00-03</a
+                    >+7 978 095-00-03</a
                   >
                 </div>
               </div>
               <div class="footer__email">
-                <svg
-                  class="footer__email-icon"
-                  width="24"
-                  height="24"
-                  aria-hidden="true"
-                >
-                  <use xlink:href="image/sprite.svg#icon-mail"></use>
-                </svg>
+                <img class="footer__email-icon" src="image/sprite/icon-mail.svg" alt="Почта">
                 <a href="mailto:strousimf@mail.ru" class="footer__email-link"
                   >strousimf@mail.ru</a
                 >
@@ -1047,15 +899,9 @@
               <div class="border-top__overlay"></div>
             </div>
             <div class="footer__bottom-content">
-              <a href="#" class="footer__logo-link">
-                <svg
-                  class="footer__logo-icon"
-                  width="137"
-                  height="89"
-                  aria-hidden="true"
-                >
-                  <use xlink:href="image/sprite.svg#icon-logo"></use>
-                </svg>
+              <a href="#" class="footer__logo-link" aria-label="На главную">
+                <img class="footer__logo-img" src="image/sprite/icon-logo.svg" 
+                alt="Логотип компании" aria-hidden="true">
               </a>
               <span class="footer__caption">
                 Продажа и&nbsp;доставка стройматериалов, аренда спецтехники
@@ -1070,19 +916,13 @@
                   Режим работы офиса и&nbsp;базы:
                 </span>
                 <span class="footer__address-text">
-                  по&nbsp;будням с&nbsp;9&nbsp;до&nbsp;18
+                  по будням с 9 до 18
                 </span>
               </div>
               <div class="footer__calculation-wrapper">
                 <button class="footer__calculation btn btn-calculation">
-                  <svg
-                    class="btn-calculation__icon"
-                    width="29"
-                    height="34"
-                    aria-hidden="true"
-                  >
-                    <use xlink:href="image/sprite.svg#icon-calculator"></use>
-                  </svg>
+                  <img src="image/sprite/icon-calculator.svg" alt="Иконка калькулятора" 
+                  class="btn-calculation__icon" aria-hidden="true">
                   <span class="btn-calculation__caption"
                     >Рассчет стройматериалов</span
                   >
@@ -1090,24 +930,12 @@
               </div>
               <div class="footer__social-media">
                 <a href="#" class="footer__social-media__link">
-                  <svg
-                    class="footer__social-media__icon"
-                    width="50"
-                    height="50"
-                    aria-hidden="true"
-                  >
-                    <use xlink:href="image/sprite.svg#icon-whatsapp"></use>
-                  </svg>
+                  <img class="footer__social-media__icon" src="image/sprite/icon-whatsapp.svg" 
+                  alt="WhatsApp">
                 </a>
                 <a href="#" class="footer__social-media__link">
-                  <svg
-                    class="footer__social-media__icon"
-                    width="50"
-                    height="50"
-                    aria-hidden="true"
-                  >
-                    <use xlink:href="image/sprite.svg#icon-vk"></use>
-                  </svg>
+                  <img class="footer__social-media__icon" src="image/sprite/icon-vk.svg" 
+                  alt="ВКонтакте">
                 </a>
               </div>
             </div>

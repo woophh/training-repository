@@ -87,6 +87,11 @@
         align-items: center;
         gap: 11px;
         margin: 0 0 22px;
+
+        &-icon {
+            width: 24px;
+            height: 24px;
+        }
     }
  
     &__contacts-btn {
@@ -111,9 +116,11 @@
         }
     }
 
+    &__logo-img {
+        width: 137px;
+        height: 89px;
+    }
 
-
-    
     &__caption {
         font-size: 16px;
         font-weight: 700;
@@ -137,6 +144,7 @@
             font-size: 16px;
             font-weight: 400;
             line-height: 19px;
+            white-space: nowrap;
         }
     }
 

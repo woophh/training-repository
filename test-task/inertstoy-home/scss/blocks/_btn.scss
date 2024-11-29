@@ -17,6 +17,11 @@
         line-height: 19px;
         text-align: left;
         color: $color-black;
+
+        &__icon {
+            width: 29px;
+            height: 34px;
+        }
     }
 
     &-red {

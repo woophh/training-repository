@@ -9,6 +9,11 @@
         margin: 0 0 16px;
     }
 
+    &__logo-img {
+        width: 108px;
+        height: 70px;
+    }
+
     &__caption {
         display: flex;
         flex-wrap: wrap;
@@ -24,17 +29,24 @@
         display: flex;
         max-width: 183px;
         gap: 7px;
+
+        &-icon {
+            width: 24px;
+            height: 24px;
+        }
     }
 
     &__phone {
+
         .phone-1{
             .phone__icon {
                 margin: 5px 0 0 15px;
             }
         }
+
         .phone-2{
             .phone__icon {
-                margin: -4px 0 0 0;
+                margin: -12px 0 0 0;
             }
         }
 

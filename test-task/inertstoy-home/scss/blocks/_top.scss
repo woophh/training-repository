@@ -61,6 +61,11 @@
                 align-items: center;
                 gap: 6px;
                 margin: auto 0 0;
+
+                &-icon {
+                    width: 18px;
+                    height: 18px;
+                }
             }
 
             &__bottom {
@@ -80,6 +85,15 @@
                 align-items: center;
                 justify-content: center;
                 gap: 8px;
+
+                &-icon {
+                    width: 24px;
+                    height: 24px;
+                }
+
+                &-text {
+                    padding-top: 1px;
+                }
             }
 
             &__fav {
