@@ -657,7 +657,6 @@ section {
 }
 .footer__bottom .border-top__overlay {
   background-color: #DBDBDB;
-  height: 30px;
 }
 .footer__caption {
   font-size: 16px;
@@ -710,11 +709,16 @@ section {
   position: absolute;
 }
 .border-top {
+  border: 1px solid #E93536;
+  border-radius: 20px;
+  width: 100%;
+  position: absolute;
   height: 50px;
   border-bottom: none;
 }
 .border-top__overlay {
   width: 101%;
+  height: 30px;
   position: absolute;
   right: 50%;
   transform: translateX(50%);
@@ -1094,4 +1098,82 @@ section {
   justify-content: center;
   border-radius: 50%;
   flex-shrink: 0;
+}
+
+.partners__heading {
+  margin: 0 0 30px;
+}
+.partners__wrapper {
+  position: relative;
+}
+.partners__wrapper .border__overlay {
+  background-color: #F0F0F0;
+}
+.partners__grid {
+  display: grid;
+  position: relative;
+  z-index: 2;
+  grid-template-columns: repeat(5, auto);
+  padding: 32px 33px 50px 48px;
+  align-items: center;
+  row-gap: 14px;
+}
+.partners__grid-img {
+  position: relative;
+}
+.partners__grid-img--intourist {
+  width: 146px;
+  height: 85px;
+  right: 3px;
+}
+.partners__grid-img--crimsoda {
+  width: 89px;
+  height: 89px;
+  left: 23px;
+}
+.partners__grid-img--perekop {
+  width: 199px;
+  height: 50px;
+  left: 58px;
+}
+.partners__grid-img--ktke {
+  width: 105px;
+  height: 105px;
+  left: 152px;
+  top: 2px;
+}
+.partners__grid-img--trolleybus {
+  width: 225px;
+  height: 43px;
+  left: 54px;
+}
+.partners__grid-img--mbu {
+  width: 80px;
+  height: 80px;
+  top: 11px;
+  left: 20px;
+}
+.partners__grid-img--ecograd {
+  width: 78px;
+  height: 93px;
+  top: 11px;
+  left: 30px;
+}
+.partners__grid-img--greenwood {
+  width: 139px;
+  height: 100px;
+  top: 10px;
+  left: 88px;
+}
+.partners__grid-img--krymeatour {
+  width: 256px;
+  height: 45px;
+  top: 12px;
+  left: 81px;
+}
+.partners__grid-img--titan {
+  width: 103px;
+  height: 102px;
+  top: 11px;
+  left: 130px;
 }/*# sourceMappingURL=style.css.map */
