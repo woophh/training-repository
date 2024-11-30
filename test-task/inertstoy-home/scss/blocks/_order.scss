@@ -1,0 +1,78 @@
+.order{
+
+    &__heading {
+        margin: 0 0 30px;
+    }
+    
+    &__list{
+        display: grid;
+        grid-template-columns: 232px 280px 230px 135px;
+        gap: 134px;
+        list-style-type: none;
+        padding: 0;
+        margin: 0 0 40px;
+        position: relative;
+
+        &-item {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            &__img {
+                width: 50px;
+                height: 50px;
+
+                &-wrapper {
+                    width: 120px;
+                    height: 120px;
+                    background-color: $color-vanilla-ice;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50%;
+                    margin-bottom: 15px;
+                }
+            }
+
+            &__step {
+                font-size: 32px;
+                font-weight: 600;
+                line-height: 32px;
+                color: $color-alizarin;
+
+                &-caption {
+                    font-size: 24px;
+                    font-weight: 500;
+                    line-height: 28px;
+                }
+            }
+        }
+    }
+
+    &__list::before {
+        content: '';
+        border: 1px solid $color-alizarin;
+        position: absolute;
+        width: 90%;
+        z-index: -1;
+        top: 57px;
+    }
+
+    &__btn {
+        
+        &-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        }
+
+        &-application {
+            padding: 17px 22px;
+        }
+
+        &-call {
+            padding: 17px 20px;
+        } 
+    }
+}    
