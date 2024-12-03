@@ -1,0 +1,23 @@
+.custom-plaseholder {
+    position: relative;
+    overflow: hidden;
+
+    &__text {
+        z-index: 100;
+        color: $color-marie-04;
+        cursor: text; 
+        width: 300px;
+        position: absolute;
+        top: 15px;
+        left: 20px;
+        display: none;
+
+        &-accent {
+            color: $color-maire;
+        }
+    }
+}
+
+.custom-plaseholder .contacts__call-back__field:invalid + .custom-plaseholder__text {
+    display: inline;
+}

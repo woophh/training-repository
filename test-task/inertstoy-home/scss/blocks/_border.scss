@@ -21,6 +21,7 @@
             transform: translateX(50%);
             top: 24px;
             z-index: 1;
+            background-color: $color-white-smoke;
         }
     }
     
@@ -32,5 +33,6 @@
         transform: translateX(50%);
         top: 24px;
         z-index: 1;
+        background-color: $color-white-smoke;
     }
 }

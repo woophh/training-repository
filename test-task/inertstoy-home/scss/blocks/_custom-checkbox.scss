@@ -1,0 +1,45 @@
+.custom-checkbox {
+    display: flex;
+    position: relative;
+    padding: 0 0 0 24px;
+    cursor: pointer;
+
+    &__label::before {
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: 2px;
+        width: 17px;
+        height: 18px;
+        border-radius: 2px;
+        border: 2px solid $color-alizarin;
+        cursor: pointer;
+    }
+
+    &__name {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16px;
+        cursor: pointer;
+
+        &-link {
+            text-decoration: underline;
+        }
+    }
+
+    &__check {
+        width: 15px;
+        height: 15px;
+        stroke: $color-alizarin;
+        color: $color-alizarin;
+        position: absolute;
+        top: 2px;
+        left: 3px;
+        display: none;
+        cursor: pointer;
+    }
+
+    &__field:checked  +&__label> &__check {
+        display: block;
+    }
+}
