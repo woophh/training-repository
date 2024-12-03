@@ -1,0 +1,89 @@
+.faq {
+    &__heading {
+        margin: 0 0 30px;
+    }
+
+    &__list {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        border-top: 1px solid $color-alizarin;
+
+        &-item {
+            display: flex;
+            gap: 20px;
+            align-items: flex-end;
+            padding: 15px 60px 18px 0;
+            border-bottom: 1px solid $color-alizarin;
+            position: relative;
+            min-height: 70px;
+
+            &--active {
+                .faq__list-item__content__answer {
+                    display: block;
+                }
+
+                .faq__list-item__img-open {
+                    display: none;
+                }
+
+                .faq__list-item__img-close {
+                    display: block;
+                }
+            }
+
+            &__content {
+                display: flex;
+                flex-direction: column;
+                gap: 14px;
+
+                &__question {
+                    margin: 0;
+                    font-size: 24px;
+                    font-weight: 500;
+                    line-height: 28px;
+                }
+
+                &__answer {
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 19px;
+                    display: none;
+                }
+            }
+
+            &__btn {
+                position: absolute;
+                top: 16px;
+                right: 5px;
+                width: 40px;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: none;
+                border-radius: 50%;
+                cursor: pointer;
+            }
+
+            &__btn:hover {
+                background-color: $color-white;
+            }
+
+            &__btn:focus-visible {
+                background-color: $color-white;
+            }
+
+            &__img-open {
+                width: 30px;
+                height: 30px;
+            }
+
+            &__img-close {
+                width: 30px;
+                height: 30px;
+                display: none;
+            }
+        }
+    }
+}
