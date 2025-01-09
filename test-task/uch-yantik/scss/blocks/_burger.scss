@@ -1,0 +1,23 @@
+.burger {
+    width: 31px;
+    height: 3px;
+    background-color: $color-seal-brown-2;
+    position: relative;
+
+    &::before,
+    &::after {
+        content: "";
+        width: 31px;
+        height: 3px;
+        background-color: $color-seal-brown-2;
+        position: absolute;
+    }
+
+    &::after {
+        top: 10px;
+    }
+
+    &::before {
+        top: -10px;
+    }
+}

@@ -1,0 +1,152 @@
+.footer {
+    display: flex;
+    align-items: flex-start;
+    column-gap: 54px;
+    position: relative;
+
+    &::before {
+        content: "";
+        background-color: $color-black-30;
+        height: 235%;
+        top: -48%;
+        width: 1px;
+        position: absolute;
+        right: 34%;
+    }
+
+    &__wrapper {
+        background-color: $color-whisper;
+        margin: 0;
+        padding: 75px 0 80px;
+        overflow: hidden;
+        border-bottom: 1px solid $color-black-30;
+    }
+
+    &__logo-icon {
+        color: $color-suva-grey;
+    }
+
+    &__navigate {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        margin: 0;
+        padding: 0;
+
+        &-wrapper {
+            display: flex;
+            gap: 70px;
+        }
+
+        &-item {
+            &-link {
+                color: $color-black-30;
+            }
+
+        }
+    }
+
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        color: $color-black-50;
+        margin: 0 0 0 4%;
+    }
+
+    &__address {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+
+        &-icon {
+            width: 24px;
+            height: 24px;
+            color: $color-black-20;
+        }
+
+        &-text {
+            font-family: $ff-grotesk;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 26px;
+        }
+    }
+
+    &__phone {
+        display: flex;
+        gap: 10px;
+
+        &-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+        }
+
+        &-icon {
+            width: 24px;
+            height: 24px;
+            margin: 5px 0 0;
+        }
+
+        &-number {
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 34px;
+        }
+    }
+
+    &__work-mode {
+        display: flex;
+        gap: 10px;
+        align-items: flex-start;
+        color: $color-black-50;
+        margin: 0 14.5% 0 auto;
+        max-width: 320px;
+
+        &-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        &-icon {
+            width: 24px;
+            height: 24px;
+        }
+
+        &-caption {
+            font-family: $ff-grotesk;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 34px;
+        }
+
+        &-text {
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 26px;
+        }
+    }
+
+    &__ornament {
+        width: 449px;
+        height: 502px;
+        position: absolute;
+        z-index: 1;
+        top: -69%;
+        right: 2%;
+        color: $color-seal-brown-2;
+        opacity: 1%;
+    }
+
+    &__caption {
+        display: block;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        color: $color-black-20;
+        max-width: 182px;
+    }
+}

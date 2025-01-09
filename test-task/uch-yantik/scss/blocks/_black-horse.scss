@@ -1,0 +1,13 @@
+.black-horse {
+    &__wrapper {
+        background-color: $color-whisper;
+        padding: 50px 0 188px;
+    }
+
+    &__img {
+        width: 1558px;
+        height: 120px;
+        margin: 0 auto;
+        border-radius: 50px;
+    }
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Уч-Янтык</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <span class="header__burger burger"></span>
+                <a href="#" class="header__logo-link" aria-label="Перейти на главную">
+                    <img src="img/sprite/icon-logo.svg" alt="Логотип кафе">
+                </a>
+                <div class="header__nav-list">
+                    <a href="#" class="header__nav-list-link">главная</a>
+                    <a href="#" class="header__nav-list-link">о&nbsp;нас</a>
+                    <a href="#" class="header__nav-list-link">меню</a>
+                    <a href="#" class="header__nav-list-link">контакты</a>
+                </div>
+                <div class="header__address-wrapper">
+                    <div class="header__address">
+                        <img class="header__address-icon" src="img/sprite/icon-location.svg" alt="Иконка адреса">
+                        <span class="header__address-text">Ул. Севастопольская&nbsp;4, Симферополь</span>
+                    </div>
+                    <a href="#" class="header__address-link">
+                        <img class="header__address-icon" src="img/sprite/icon-location.svg" alt="Иконка адреса">
+                        <span class="header__address-link-text">Смотреть на&nbsp;карте</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="banner">
+            <div class="container">
+                <svg class="banner__ornament banner__ornament--1">
+                    <use xlink:href="img/sprite.svg#ornament"></use>
+                </svg>
+                <svg class="banner__ornament banner__ornament--2">
+                    <use xlink:href="img/sprite.svg#ornament"></use>
+                </svg>
+                <div class="banner__wrapper">
+                    <div class="banner__content">
+                        <h1 class="banner__heading">Первая Караимская Пекарня</h1>
+                        <p class="banner__description">Лишь многие известные личности, вне 
+                            зависимости от их уровня, должны быть объединены в целые кластеры себе подобных
+                        </p>
+                        <a href="#" class="banner__menu">
+                            <img class="banner__menu-icon" src="img/sprite/icon-menu.svg" alt="иконка книги">
+                            <span class="banner__menu-text">Смотреть Меню</span>
+                        </a>
+                        <div class="banner__next">
+                            <a href="#" class="banner__next-link">
+                                <img class="banner__next-icon" src="img/sprite/icon-arrow-down.svg" alt="Стрелка вниз">
+                            </a>
+                            <div class="banner__next-text">
+                                <span class="banner__next-caption">следующая страница</span>
+                                <span class="banner__next-name">о&nbsp;нас</span>
+                            </div>
+                        </div>
+                    </div>
+                    <picture>
+                        <source media="(max-width: 767px)" srcset="img/banner-img-mobile.png 1x,
+                        img/banner-img-mobile@2x.png 2x">
+                        <img class="banner__img" src="img/banner-img.png" alt="Фото выпечки"
+                        srcset="img/banner-img@2x.png 2x">
+                    </picture>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer__wrapper">
+        <div class="container">
+            <div class="footer">
+                <a href="#" class="footer__logo-link" aria-label="Перейти на главную">
+                    <svg class="footer__logo-icon">
+                        <use xlink:href="img/sprite.svg#icon-logo"></use>
+                    </svg>
+                </a>
+                <div class="footer__navigate-wrapper">
+                    <ul class="footer__navigate">
+                        <li class="footer__navigate-item"><a class="footer__navigate-item-link" href="#">главная</a></li>
+                        <li class="footer__navigate-item"><a class="footer__navigate-item-link" href="#">о&nbsp;нас</a></li>
+                        <li class="footer__navigate-item"><a class="footer__navigate-item-link" href="#">меню</a></li>
+                        <li class="footer__navigate-item"><a class="footer__navigate-item-link" href="#">контакты</a></li>
+                    </ul>
+                    <ul class="footer__navigate">
+                        <li class="footer__navigate-item"><a class="footer__navigate-item-link" href="#">отзывы</a></li>
+                        <li class="footer__navigate-item"><a class="footer__navigate-item-link" href="#">новости</a></li>
+                    </ul>
+                </div>
+                <div class="footer__contacts">
+                    <div class="footer__address">
+                        <svg class="footer__address-icon">
+                            <use xlink:href="img/sprite.svg#icon-location"></use>
+                        </svg>
+                        <span class="footer__aaddress-text">
+                            Ул. Севастопольская&nbsp;4, Симферополь
+                        </span>
+                    </div>
+                    <div class="footer__phone">
+                        <img class="footer__phone-icon" src="img/sprite/icon-phone.svg" alt="Иконка телефона" aria-hidden="true">
+                        <div class="footer__phone-wrapper">
+                            <span class="footer__phone-number">
+                                +7&nbsp;978 767-34-52
+                            </span>
+                            <span class="footer__phone-number">
+                                +7&nbsp;978 767-34-52
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__work-mode">
+                    <img src="img/sprite/icon-clock.svg" alt="иконка часов" aria-hidden="true">
+                    <div class="footer__work-mode-wrapper">
+                        <span class="footer__work-mode-caption">
+                            работаем ежедневно!
+                        </span>
+                        <span class="footer__work-mode-text">
+                            с 9 до 19
+                        </span>
+                    </div>
+                </div>
+                <svg class="footer__ornament">
+                    <use xlink:href="img/sprite.svg#ornament"></use>
+                </svg>
+            </div>
+            <span class="footer__caption">
+                все права защищены 2023
+            </span>
+        </div>
+    </footer>
+    <div class="black-horse__wrapper">
+        <div class="container">
+            <a href="#" class="black-horse" aria-label="Перейти на сайт разработчиков">
+                <img class="black-horse__img" src="img/black-horse.jpg" alt="Рекламное изображение разработчиков">
+            </a>
+        </div>
+    </div>
+</body>
+</html>

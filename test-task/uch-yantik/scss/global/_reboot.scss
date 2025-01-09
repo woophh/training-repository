@@ -1,0 +1,43 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $ff-montserrat;
+  font-weight: 500;
+  color: $color-seal-brown;
+  background-color: $color-white;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex-grow: 1;
+  position: relative;
+  z-index: 5;
+}
+
+svg {
+  flex-shrink: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 50px;
+  margin: 0;
+}
+
+section {
+  margin: 0 0 75px;
+}

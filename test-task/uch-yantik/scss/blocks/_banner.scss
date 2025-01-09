@@ -1,0 +1,150 @@
+.banner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    min-height: 675px;
+    height: calc(100vh - 140px);
+
+    &__ornament {
+        width: 855px;
+        height: 958px;
+        color: $color-seal-brown-2;
+        opacity: 2%;
+        position: absolute;
+
+        &--1 {
+            top: -76%;
+            left: -24%;
+        }
+
+        &--2 {
+            bottom: -33%;
+            right: -20%;
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 102px 0 80px;
+    }
+
+    &__content {
+        max-width: 470px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    &__heading {
+        font-family: $ff-grotesk;
+        font-size: 80px;
+        font-weight: 700;
+        line-height: 80px;
+        margin: 0 0 8%;
+    }
+
+    &__description {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 26px;
+        margin: 0;
+        margin: 0 0 7%;
+    }
+
+    &__menu {
+        background-color: $color-sauvignon;
+        padding: 14px;
+        min-width: 370px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        border-radius: 25px;
+        margin: 0 0 7%;
+
+        &:hover,
+        &:focus-visible {
+            background-color: $color-tuft-bush;
+        }
+
+        &-icon {
+            width: 24px;
+            height: 24px;
+        }
+
+        &-text {
+            color: $color-seal-brown;
+        }
+    }
+
+    &__next {
+        display: flex;
+        align-items: center;
+        gap: 37px;
+        margin: 47px 0 0 0;
+
+        &-link {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $color-sauvignon-20;
+            position: relative;
+            transition: background-color ease-in 0.2s;
+
+            &::before {
+                content: "";
+                width: 104px;
+                height: 104px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background-color: $color-sauvignon;
+                opacity: 0.2;
+                z-index: -1;
+                border-radius: 50%;
+            }
+
+            &:hover,
+            &:focus-visible {
+                background-color: $color-seashel;
+
+                .banner__next-icon {
+                    transform: translateY(8px);
+                }
+            }
+        }
+
+        &-icon {
+            width: 34px;
+            height: 34px;
+            transition: transform ease-in 0.2s;
+        }
+
+        &-text {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        &-caption {
+            font-family: $ff-grotesk;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 26px;
+        }
+
+        &-name {
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 26px;
+        }
+    }
+}
