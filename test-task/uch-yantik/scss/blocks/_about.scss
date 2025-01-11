@@ -1,0 +1,65 @@
+.about {
+
+    &__wrapper {
+        width: 100%;
+        position: relative;
+    }
+
+    &__card {
+        width: 100%;
+        min-height: 930px;
+        display: flex;
+        padding: 90px 100px;
+        color: $color-white;
+        justify-content: space-between;
+        gap: 30px;
+    }
+
+    &__bg {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        border-radius: 50px;
+    }
+
+    &__part {
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+        align-items: flex-start;
+        justify-content: flex-end;
+        max-width: 470px;
+
+        &--right {
+            justify-content: flex-start;
+        }
+    }
+
+    &__heading {
+        font-family: $ff-grotesk;
+        margin: 0 0 12px;
+        font-size: 80px;
+        font-weight: 700;
+        line-height: 80px;
+    }
+
+    &__text {
+        margin: 0;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 26px;
+    }
+
+    &__logo {
+        display: flex;
+        align-items: center;
+
+        &-icon {
+            width: 279px;
+            height: 279px;
+        }
+    }
+}
