@@ -796,4 +796,139 @@ template {
 .about__logo-icon {
   width: 279px;
   height: 279px;
+}
+
+.media__wrapper {
+  display: flex;
+  position: relative;
+  gap: 50px;
+  width: 100%;
+}
+.media__ornament {
+  position: absolute;
+  width: 517px;
+  height: 578px;
+  color: #390000;
+  opacity: 0.02;
+  z-index: -1;
+  top: 12%;
+  right: -14.5%;
+}
+.media__heading {
+  font-family: Soyuz Grotesk;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 46px;
+  color: rgba(0, 0, 0, 0.1);
+  margin: 0 0 27px;
+}
+.media__video {
+  min-width: 43.5%;
+}
+.media__video-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 5px;
+  width: 100%;
+  min-height: 506px;
+  padding: 40px;
+}
+.media__video-img {
+  position: absolute;
+  border-radius: 50px;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.media__video-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 36px;
+  height: 36px;
+}
+.media__video-name {
+  font-family: "Soyuz Grotesk", "Arial", sans-serif;
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 46px;
+  margin: 0;
+}
+.media__video-date {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+  color: #ffffff;
+  opacity: 0.5;
+  margin: 0;
+}
+.media__articles {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+.media__articles-heading {
+  font-family: Soyuz Grotesk;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 46px;
+  color: #000000;
+  margin: 0 0 27px;
+}
+.media__articles-card {
+  background-color: #F8F8F8;
+  display: flex;
+  flex-direction: column;
+  padding: 15px 20px 10px;
+  border-radius: 25px;
+  min-height: 502px;
+}
+.media__articles-card-img-wrapper {
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  margin: 0 0 21px;
+}
+.media__articles-card-img--travelcrimea {
+  width: 161px;
+  height: 50px;
+}
+.media__articles-card-img--rgru {
+  width: 144px;
+  height: 67px;
+}
+.media__articles-card-img--zen {
+  width: 178px;
+  height: 34px;
+}
+.media__articles-card-text {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+}
+.media__articles-card-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: auto 0 0;
+  color: #250202;
+  background-color: #EDEDED;
+  border-radius: 2000px;
+  padding: 10px;
+  width: 100%;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 26px;
+}
+.media__articles-card-btn-icon {
+  width: 34px;
+  height: 34px;
+  rotate: -90deg;
 }/*# sourceMappingURL=style.css.map */
