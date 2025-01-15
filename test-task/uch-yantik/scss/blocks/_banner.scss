@@ -10,6 +10,7 @@
         height: 958px;
         color: $color-seal-brown-2;
         opacity: 2%;
+        z-index: -1;
         position: absolute;
 
         &--1 {
@@ -71,6 +72,8 @@
             background-color: $color-tuft-bush;
         }
 
+        transition: background-color $transition-200;
+
         &-icon {
             width: 24px;
             height: 24px;
@@ -99,7 +102,7 @@
             justify-content: center;
             background-color: $color-sauvignon-20;
             position: relative;
-            transition: background-color ease-in 0.2s;
+            transition: background-color $transition-200;
 
             &::before {
                 content: "";

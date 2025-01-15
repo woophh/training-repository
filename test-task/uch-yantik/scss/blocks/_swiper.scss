@@ -1,0 +1,15 @@
+.swiper {
+    width: 1570px;
+    height: 100%;
+    overflow: visible;
+    margin-left: 0;
+
+    &-pagination-bullet {
+        background-color: $color-seal-brown;
+        opacity: 0.2;
+
+        &-active {
+            opacity: 1;
+        }
+    }
+}

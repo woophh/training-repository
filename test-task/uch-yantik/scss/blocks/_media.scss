@@ -8,13 +8,23 @@
 
     &__ornament {
         position: absolute;
-        width: 517px;
-        height: 578px;
         color: $color-seal-brown-2;
         opacity: 0.02;
         z-index: -1;
-        top: 12%;
-        right: -14.5%;
+
+        &--1 {
+            width: 517px;
+            height: 578px;
+            top: 12%;
+            right: -14.5%;
+        }
+
+        &--2 {
+            width: 767px;
+            height: 860px;
+            bottom: -102%;
+            left: -17%; 
+        }
     }
 
     &__heading {

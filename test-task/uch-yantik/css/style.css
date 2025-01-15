@@ -55,6 +55,10 @@ section {
   margin: 0 0 75px;
 }
 
+.wrapper {
+  overflow-x: hidden;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
   ========================================================================== */
@@ -407,6 +411,9 @@ template {
 .header__nav-list-link:hover, .header__nav-list-link:focus-visible {
   background-color: #FFF5EF;
 }
+.header__nav-list-link {
+  transition: background-color ease-in 0.2s;
+}
 .header__address {
   display: flex;
   gap: 10px;
@@ -439,6 +446,7 @@ template {
   border-radius: 2000px;
   min-width: 270px;
   padding: 14px;
+  transition: background-color ease-in 0.2s;
 }
 .header__address-link-text {
   font-size: 18px;
@@ -580,6 +588,7 @@ template {
   font-size: 18px;
   font-weight: 600;
   line-height: 26px;
+  white-space: nowrap;
 }
 .footer__ornament {
   width: 449px;
@@ -623,6 +632,7 @@ template {
   height: 958px;
   color: #390000;
   opacity: 2%;
+  z-index: -1;
   position: absolute;
 }
 .banner__ornament--1 {
@@ -671,6 +681,7 @@ template {
   gap: 10px;
   border-radius: 25px;
   margin: 0 0 7%;
+  transition: background-color ease-in 0.2s;
 }
 .banner__menu:hover, .banner__menu:focus-visible {
   background-color: #FAD8C5;
@@ -806,13 +817,21 @@ template {
 }
 .media__ornament {
   position: absolute;
-  width: 517px;
-  height: 578px;
   color: #390000;
   opacity: 0.02;
   z-index: -1;
+}
+.media__ornament--1 {
+  width: 517px;
+  height: 578px;
   top: 12%;
   right: -14.5%;
+}
+.media__ornament--2 {
+  width: 767px;
+  height: 860px;
+  bottom: -102%;
+  left: -17%;
 }
 .media__heading {
   font-family: Soyuz Grotesk;
@@ -931,4 +950,168 @@ template {
   width: 34px;
   height: 34px;
   rotate: -90deg;
+}
+
+.swiper {
+  width: 1570px;
+  height: 100%;
+  overflow: visible;
+  margin-left: 0;
+}
+.swiper-pagination-bullet {
+  background-color: #250202;
+  opacity: 0.2;
+}
+.swiper-pagination-bullet-active {
+  opacity: 1;
+}
+
+.menu {
+  overflow: hidden;
+  position: relative;
+  margin-top: 175px;
+}
+.menu__heading {
+  font-family: "Soyuz Grotesk", "Arial", sans-serif;
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 80px;
+  margin: 0 0 30px;
+}
+.menu__top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+.menu__food, .menu__sauce, .menu__drinks {
+  display: none;
+}
+.menu__active {
+  display: block;
+}
+.menu__btn-wrapper {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.menu__btn {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 26px;
+  padding: 22px;
+  min-width: 170px;
+  border: none;
+  border-radius: 25px;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color ease-in 0.2s;
+}
+.menu__btn:hover, .menu__btn:focus-visible {
+  background-color: #FFF5EF;
+}
+.menu__navigate-food, .menu__navigate-sauce, .menu__navigate-drinks {
+  gap: 20px;
+  align-items: center;
+  display: none;
+}
+.menu__navigate-active {
+  display: flex;
+}
+.menu__food-button-prev, .menu__food-button-next, .menu__sauce-button-prev, .menu__sauce-button-next, .menu__drinks-button-prev, .menu__drinks-button-next {
+  width: 70px;
+  height: 70px;
+  background-color: rgba(249, 235, 227, 0.6);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: auto;
+}
+.menu__food-button-prev img, .menu__food-button-next img, .menu__sauce-button-prev img, .menu__sauce-button-next img, .menu__drinks-button-prev img, .menu__drinks-button-next img {
+  width: 34px;
+  height: 34px;
+}
+.menu__food-button-prev img, .menu__sauce-button-prev img, .menu__drinks-button-prev img {
+  transform: rotate(90deg);
+}
+.menu__food-button-next img, .menu__sauce-button-next img, .menu__drinks-button-next img {
+  transform: rotate(-90deg);
+}
+.menu__food-button-prev::after, .menu__food-button-next::after, .menu__sauce-button-prev::after, .menu__sauce-button-next::after, .menu__drinks-button-prev::after, .menu__drinks-button-next::after {
+  content: none;
+}
+.menu__food-pagination, .menu__sauce-pagination, .menu__drinks-pagination {
+  top: 9.8% !important;
+  right: 8%;
+  left: auto !important;
+  width: 200px !important;
+  height: 20px;
+}
+
+.menu-item {
+  width: 370px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+}
+.menu-item:hover .menu-item__img, .menu-item:focus-visible .menu-item__img {
+  transform: scale(1.1);
+}
+.menu-item:hover .menu-item__img-wrapper, .menu-item:focus-visible .menu-item__img-wrapper {
+  transform: scale(0.98);
+}
+.menu-item__img {
+  width: 370px;
+  height: 370px;
+  padding: 2px;
+  border-radius: 50px;
+  transition: transform ease 1s;
+}
+.menu-item__img-wrapper {
+  border: 2px solid #390000;
+  border-radius: 50px;
+  margin: 0 0 15px;
+  height: 370px;
+  overflow: hidden;
+  transition: transform ease 0.4s;
+}
+.menu-item__name {
+  font-family: "Soyuz Grotesk", "Arial", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 46px;
+}
+.menu-item__gram {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 26px;
+  color: rgba(37, 2, 2, 0.3);
+}
+.menu-item__gram-2 {
+  color: rgba(37, 2, 2, 0.5);
+}
+.menu-item__description {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+}
+.menu-item__price, .menu-item__price-2 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 46px;
+  border-radius: 50px 20px 50px 20px;
+  background-color: #fff;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  min-width: 90px;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu-item__price-2 {
+  top: 80px;
 }/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,82 @@
+.menu-item {
+    width: 370px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+    $root: &;
+
+    &:hover,
+    &:focus-visible {
+        #{$root}__img {
+            transform: scale(1.1);
+        }
+
+        #{$root}__img-wrapper {
+            transform: scale(0.98);
+        }
+    }
+
+    &__img {
+        width: 370px;
+        height: 370px;
+        padding: 2px;
+        border-radius: 50px;
+        transition: transform ease 1s;
+
+        &-wrapper {
+            border: 2px solid $color-seal-brown-2;
+            border-radius: 50px;
+            margin: 0 0 15px;
+            height: 370px;
+            overflow: hidden;
+            transition: transform ease 0.4s;
+        }
+    }
+
+    &__name {
+        font-family: $ff-grotesk;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 46px;
+    }
+
+    &__gram {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 26px;
+        color: $color-seal-brown-30;
+
+        &-2 {
+            color: $color-seal-brown-50;
+        }
+    }
+
+    &__description {
+        margin: 0;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 26px;
+    }
+
+    &__price,
+    &__price-2 {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 46px;
+        border-radius: 50px 20px 50px 20px;
+        background-color: #fff;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        min-width: 90px;
+        padding: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__price-2 {
+        top: 80px;
+    }
+}

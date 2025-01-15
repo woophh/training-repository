@@ -34,6 +34,10 @@
                 background-color: $color-seashel;
             }
         }
+
+        &-link {
+            transition: background-color $transition-200;
+        }
     }
 
     &__address {
@@ -83,6 +87,8 @@
             &:focus-visible {
                 background-color: $color-tuft-bush;
             }
+
+            transition: background-color $transition-200;
         }
     }
 }

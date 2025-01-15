@@ -1,0 +1,124 @@
+.menu {
+    overflow: hidden;
+    position: relative;
+    margin-top: 175px;
+
+    &__heading {
+        font-family: $ff-grotesk;
+        font-size: 80px;
+        font-weight: 700;
+        line-height: 80px;
+        margin: 0 0 30px;
+    }
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 25px;
+    }
+
+    &__food,
+    &__sauce,
+    &__drinks {
+        display: none;
+    }
+
+    &__active {
+        display: block;
+    }
+
+    &__btn-wrapper {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+
+    &__btn {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 26px;
+        padding: 22px;
+        min-width: 170px;
+        border: none;
+        border-radius: 25px;
+        background-color: transparent;
+        cursor: pointer;
+
+        &:hover,
+        &:focus-visible {
+            background-color: $color-seashel;
+        }
+
+        transition: background-color $transition-200;
+    }
+
+    &__navigate {
+        &-food,
+        &-sauce,
+        &-drinks {
+            gap: 20px;
+            align-items: center;
+            display: none;
+        }
+
+        &-active {
+            display: flex;
+        }
+    }
+
+    &__food-button-prev,
+    &__food-button-next,
+    &__sauce-button-prev,
+    &__sauce-button-next,
+    &__drinks-button-prev,
+    &__drinks-button-next {
+        width: 70px;
+        height: 70px;
+        background-color: $color-sauvignon-60;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        left: auto;
+
+        img {
+            width: 34px;
+            height: 34px;
+        }
+    }
+
+    &__food-button-prev,
+    &__sauce-button-prev,
+    &__drinks-button-prev {
+        img {
+            transform: rotate(90deg);
+        }
+    }
+    
+    &__food-button-next,
+    &__sauce-button-next,
+    &__drinks-button-next {
+        img {
+            transform: rotate(-90deg);
+        }
+    }
+
+    &__food-button-prev::after,
+    &__food-button-next::after,
+    &__sauce-button-prev::after,
+    &__sauce-button-next::after,
+    &__drinks-button-prev::after,
+    &__drinks-button-next::after {
+        content: none;
+    }
+
+    &__food-pagination,
+    &__sauce-pagination,
+    &__drinks-pagination {
+        top: 9.8%!important;
+        right: 8%;
+        left: auto!important;
+        width: 200px!important;
+        height: 20px;
+    }
+}
