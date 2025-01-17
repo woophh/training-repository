@@ -1114,4 +1114,96 @@ template {
 }
 .menu-item__price-2 {
   top: 80px;
+}
+
+.contacts__wrapper {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+.contacts__info {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 345px;
+}
+.contacts__welcome {
+  font-family: "Soyuz Grotesk", "Arial", sans-serif;
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 80px;
+  margin: 0;
+}
+.contacts__open-hours {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 34px;
+}
+.contacts__caption {
+  display: block;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+  margin: 0 0 10px;
+}
+.contacts__address-wrapper {
+  display: flex;
+  gap: 10px;
+}
+.contacts__address-text {
+  font-family: "Soyuz Grotesk", "Arial", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 34px;
+}
+.contacts__icon {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  top: 8px;
+}
+.contacts__phone-wrapper {
+  display: flex;
+  gap: 10px;
+}
+.contacts__phone-list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.contacts__phone-item {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 34px;
+  color: #250202;
+}
+.contacts__social-wrapper {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.contacts__social-item {
+  background-color: #F9EBE3;
+  border-radius: 50%;
+  width: 54px;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.contacts__map {
+  width: 100%;
+  height: 100%;
+  filter: grayscale(50%);
+  mix-blend-mode: hard-light;
+}
+.contacts__map-wrapper {
+  width: 1000px;
+  height: 620px;
+  border-radius: 50px 50px 150px 150px;
+  overflow: hidden;
+  background-color: #b7521b;
+  background-blend-mode: hue, normal;
 }/*# sourceMappingURL=style.css.map */
