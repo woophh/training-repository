@@ -93,6 +93,13 @@
             align-items: center;
             justify-content: center;
             cursor: pointer;
+
+            &:hover,
+            &:focus-visible {
+                background-color: $color-tuft-bush;
+            }
+
+            transition: $transition-200;
         }
     }
 

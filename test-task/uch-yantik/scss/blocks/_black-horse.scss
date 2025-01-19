@@ -1,13 +1,52 @@
 .black-horse {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50px;
+    max-height: 120px;
+
+    &::before {
+        content: "";
+        background-color: #9747FF;
+        position: absolute;
+        width: 781px;
+        height: 781px;
+        left: -8%;
+        top: -153px;
+        border-radius: 50%;
+        filter: blur(125px);
+    }
+
+    &::after {
+        content: "";
+        background-color: #9747FF;
+        position: absolute;
+        width: 781px;
+        height: 781px;
+        right: -12%;
+        bottom: -145px;
+        border-radius: 50%;
+        filter: blur(125px);
+    }
+    
     &__wrapper {
         background-color: $color-whisper;
         padding: 50px 0 188px;
     }
 
     &__img {
-        width: 1558px;
-        height: 120px;
+        width: 100%;
+        height: auto;
         margin: 0 auto;
-        border-radius: 50px;
+    }
+
+    &__icon {
+        position: absolute;
+        width: 298px;
+        height: 70px;
+        top: 22%;
+        left: 2.5%;
     }
 }

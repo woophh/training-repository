@@ -28,6 +28,7 @@
         display: flex;
         width: 100%;
         height: 100%;
+        align-items: center;
         justify-content: space-between;
         padding: 0 3% 0 4.5%;
     }
@@ -37,19 +38,22 @@
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        justify-content: center;
     }
 
     &__heading {
         font-family: $ff-grotesk;
-        font-size: 80px;
+        font-size: clamp(5rem, 0.6818rem + 3.6364vw, 7.5rem);
         font-weight: 700;
         line-height: 80px;
         margin: 0 0 8%;
+
+        @media (min-width: 2550px) {
+            line-height: 100px;
+        }
     }
 
     &__description {
-        font-size: 18px;
+        font-size: clamp(1.125rem, 0.0455rem + 0.9091vw, 1.75rem);
         font-weight: 500;
         line-height: 26px;
         margin: 0;
@@ -81,7 +85,7 @@
 
         &-text {
             color: $color-seal-brown;
-            font-size: 18px;
+            font-size: clamp(1.125rem, 0.0455rem + 0.9091vw, 1.75rem);
             font-weight: 600;
             line-height: 26px;
         }
@@ -142,13 +146,13 @@
 
         &-caption {
             font-family: $ff-grotesk;
-            font-size: 18px;
+            font-size: clamp(1.125rem, 0.0455rem + 0.9091vw, 1.75rem);
             font-weight: 700;
             line-height: 26px;
         }
 
         &-name {
-            font-size: 18px;
+            font-size: clamp(1.125rem, 0.0455rem + 0.9091vw, 1.75rem);
             font-weight: 500;
             line-height: 26px;
         }
