@@ -1,8 +1,16 @@
 .swiper {
     width: 1570px;
     height: 100%;
-    overflow: visible;
+    overflow: auto;
     margin-left: 0;
+
+    &-slide {
+        width: 370px!important;
+
+        @include vp-767 {
+            width: 212px!important;
+        }
+    }
 
     &-pagination-bullet {
         background-color: $color-seal-brown;

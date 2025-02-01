@@ -14,9 +14,11 @@
         <header class="header">
             <div class="container">
                 <div class="header__wrapper">
-                    <span class="header__burger burger"></span>
-                    <a href="#" class="header__logo-link" aria-label="Перейти на главную">
-                        <img src="img/sprite/icon-logo.svg" alt="Логотип кафе">
+                    <button class="burger__btn" aria-label="Открыть меню старницы">
+                        <span class="header__burger burger"></span>
+                    </button>
+                    <a href="#" class="header__logo" aria-label="Перейти на главную">
+                        <img class="header__logo-icon" src="img/sprite/icon-logo.svg" alt="Логотип кафе">
                     </a>
                     <div class="header__nav-list">
                         <a href="#homepage" class="header__nav-list-link">главная</a>
@@ -33,6 +35,52 @@
                             <img class="header__address-icon" src="img/sprite/icon-location.svg" alt="Иконка адреса">
                             <span class="header__address-link-text">Смотреть на&nbsp;карте</span>
                         </a>
+                    </div>
+                    <div class="burger-menu">
+                        <div class="container">
+                            <svg class="burger-menu__ornament burger-menu__ornament--1">
+                                <use xlink:href="img/sprite.svg#ornament"></use>
+                            </svg>
+                            <svg class="burger-menu__ornament burger-menu__ornament--2">
+                                <use xlink:href="img/sprite.svg#ornament"></use>
+                            </svg>
+                            <div class="burger-menu__wrapper">
+                                <div class="burger-menu__list">
+                                    <a href="#homepage" class="burger-menu__item">главная
+                                        <img src="img/sprite/icon-arrow-down.svg" alt="Стрелка вправо" class="burger-menu__item__icon">
+                                    </a>
+                                    <a href="#about" class="burger-menu__item">о&nbsp;нас
+                                        <img src="img/sprite/icon-arrow-down.svg" alt="Стрелка вправо" class="burger-menu__item__icon">
+                                    </a>
+                                    <a href="#menu" class="burger-menu__item">меню
+                                        <img src="img/sprite/icon-arrow-down.svg" alt="Стрелка вправо" class="burger-menu__item__icon">
+                                    </a>
+                                    <a href="#" class="burger-menu__item">отзывы
+                                        <img src="img/sprite/icon-arrow-down.svg" alt="Стрелка вправо" class="burger-menu__item__icon">
+                                    </a>
+                                    <a href="#contacts" class="burger-menu__item">контакты
+                                        <img src="img/sprite/icon-arrow-down.svg" alt="Стрелка вправо" class="burger-menu__item__icon">
+                                    </a>
+                                </div>
+                                <div class="burger-menu__social">
+                                    <a href="#" class="burger-menu__social-item">
+                                        <img src="img/sprite/icon-vk.svg" alt="иконка Вконтакте">
+                                    </a>
+                                    <a href="#" class="burger-menu__social-item">
+                                        <img src="img/sprite/icon-telegram.svg" alt="иконка Телеграмма">
+                                    </a>
+                                </div>
+                                <div class="burger-menu__open-hours">
+                                    <img class="burger-menu__open-hours__icon" src="img/sprite/icon-clock.svg" alt="Иконка часов">
+                                    <div class="burger-menu__open-hours__wrapper">
+                                        <span class="burger-menu__open-hours__caption">Работаем ежедневно</span>
+                                        <span class="burger-menu__open-hours__text">
+                                            с&nbsp;9&nbsp;до&nbsp;19
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -81,9 +129,9 @@
                 <div class="container">
                     <div class="about__wrapper">
                         <picture>
-                            <source media="(max-width: 767px)" srcset="img/about-mobile.webp" type="image/webp">
+                            <source media="(max-width: 465px)" srcset="img/about-mobile.webp" type="image/webp">
                             <source srcset="img/about.webp" type="image/webp">
-                            <source media="(max-width: 767px)" srcset="img/about-mobile.jpg 1x, img/about-mobile@2x.jpg 2x" type="image/jpg">
+                            <source media="(max-width: 465px)" srcset="img/about-mobile.jpg 1x, img/about-mobile@2x.jpg 2x" type="image/jpg">
                             <img class="about__bg" src="img/about.jpg" srcset="img/about@2x.jpg 2x" alt="Фото пирогов">
                         </picture>
                         <div class="about__card">
@@ -110,6 +158,24 @@
                                     В своём стремлении повысить качество жизни, они забывают, что новая модель организационной деятельности выявляет срочную потребность переосмысления внешнеэкономических политик
                                 </p>
                             </div>
+                            <div class="about__mobile">
+                                <div class="about__btn-wrapper">
+                                    <button class="about__btn about__btn--active" id="karaimsBtn">
+                                        о караимах
+                                    </button>
+                                    <button class="about__btn" id="bakeryBtn">
+                                        о пекарне
+                                    </button>
+                                </div>
+                                <p class="about__part about__part--actve" id="karaims">
+                                    Внезапно, сторонники тоталитаризма в науке, превозмогая сложившуюся непростую экономическую ситуацию, заблокированы в рамках своих собственных рациональных ограничений.
+                                    В своём стремлении повысить качество жизни, они забывают, что новая модель организационной деятельности выявляет срочную потребность переосмысления внешнеэкономических
+                                </p>
+                                <p class="about__part" id="bakery">
+                                    Внезапно, сторонники тоталитаризма в науке, превозмогая сложившуюся непростую экономическую ситуацию, заблокированы в рамках своих собственных рациональных ограничений.
+                                    В своём стремлении повысить качество жизни, они забывают, что новая модель организационной деятельности выявляет срочную потребность переосмысления внешнеэкономических
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -131,6 +197,7 @@
                                     <img class="media__video-img" src="img/video-cat.jpg" alt="Кадр из видео" srcset="img/video-cat@2x.jpg 2x">
                                 </picture>
                                 <img class="media__video-icon" src="img/sprite/icon-play.svg" alt="Иконка play">
+                                <div class="media__video-icon__bg"></div>
                                 <p class="media__video-name">кот мостик о&nbsp;караимских пирожках</p>
                                 <p class="media__video-date">репортаж от&nbsp;27.11.2022</p>
                             </a>
@@ -192,29 +259,35 @@
                             <button class="menu__btn">напитки</button>
                         </div>
                         <div class="menu__navigate-food menu__navigate-active">
-                            <div class="menu__food-button-prev">
-                                <img src="img/sprite/icon-arrow-down.svg" alt="стрелка назад">
-                            </div>
-                            <div class="menu__food-button-next">
-                                <img src="img/sprite/icon-arrow-down.svg" alt="стрелка вперед">
+                            <div class="menu__navigate-btn">
+                                <div class="menu__food-button-prev">
+                                    <img src="img/sprite/icon-arrow-down.svg" alt="стрелка назад">
+                                </div>
+                                <div class="menu__food-button-next">
+                                    <img src="img/sprite/icon-arrow-down.svg" alt="стрелка вперед">
+                                </div>
                             </div>
                             <div class="menu__food-pagination"></div>
                         </div>
                         <div class="menu__navigate-sauce">
-                            <div class="menu__sauce-button-prev">
-                                <img src="img/sprite/icon-arrow-down.svg" alt="стрелка назад">
-                            </div>
-                            <div class="menu__sauce-button-next">
-                                <img src="img/sprite/icon-arrow-down.svg" alt="стрелка вперед">
+                            <div class="menu__navigate-btn">
+                                <div class="menu__sauce-button-prev">
+                                    <img src="img/sprite/icon-arrow-down.svg" alt="стрелка назад">
+                                </div>
+                                <div class="menu__sauce-button-next">
+                                    <img src="img/sprite/icon-arrow-down.svg" alt="стрелка вперед">
+                                </div>
                             </div>
                             <div class="menu__sauce-pagination"></div>
                         </div>
                         <div class="menu__navigate-drinks">
-                            <div class="menu__drinks-button-prev">
-                                <img src="img/sprite/icon-arrow-down.svg" alt="стрелка назад">
-                            </div>
-                            <div class="menu__drinks-button-next">
-                                <img src="img/sprite/icon-arrow-down.svg" alt="стрелка вперед">
+                            <div class="menu__navigate-btn">
+                                <div class="menu__drinks-button-prev">
+                                    <img src="img/sprite/icon-arrow-down.svg" alt="стрелка назад">
+                                </div>
+                                <div class="menu__drinks-button-next">
+                                    <img src="img/sprite/icon-arrow-down.svg" alt="стрелка вперед">
+                                </div>
                             </div>
                             <div class="menu__drinks-pagination"></div>
                         </div>
@@ -562,6 +635,9 @@
                             </div>
                         </div>
                         <div class="contacts__location">
+                            <svg class="contacts__ornament">
+                                <use xlink:href="img/sprite.svg#ornament"></use>
+                            </svg>
                             <div class="contacts__map-wrapper" id="map">
                                 <iframe class="contacts__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3Aad7e0cc078a83d89de42f62a3e26970b150d54b89440094aac08e95079441ed2&amp;source=constructor" width="844" height="495" frameborder="0"></iframe>
                             </div>

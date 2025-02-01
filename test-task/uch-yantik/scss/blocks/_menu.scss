@@ -3,12 +3,27 @@
     position: relative;
     margin-top: 175px;
 
+    @include vp-1023 {
+        padding: 0 0 75px;
+        margin-top: 0;
+    }
+
     &__heading {
         font-family: $ff-grotesk;
         font-size: 80px;
         font-weight: 700;
         line-height: 80px;
         margin: 0 0 30px;
+
+        @include vp-1023 {
+            font-size: 60px;
+            line-height: 60px;
+        }
+
+        @include vp-767 {
+            font-size: 40px;
+            line-height: 40px;
+        }
     }
 
     &__top {
@@ -31,6 +46,16 @@
         display: flex;
         gap: 10px;
         align-items: center;
+
+        @media (max-width: 560px) {
+            overflow: auto;
+            margin: 0 -20px;
+            padding: 0 20px;
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
+        }
     }
 
     &__btn {
@@ -59,10 +84,24 @@
             gap: 20px;
             align-items: center;
             display: none;
+
+            @include vp-1023 {
+                position: absolute;
+                bottom: 0;
+                right: 15px;
+                flex-direction: row-reverse;
+            }
         }
 
         &-active {
             display: flex;
+        }
+
+        
+        &-btn {
+            display: flex;
+            gap: 20px;
+            align-items: center;
         }
     }
 
@@ -80,6 +119,12 @@
         align-items: center;
         justify-content: center;
         left: auto;
+        flex-shrink: 0;
+
+        @include vp-1023 {
+            width: 60px;
+            height: 60px;
+        }
 
         img {
             width: 34px;
@@ -115,10 +160,11 @@
     &__food-pagination,
     &__sauce-pagination,
     &__drinks-pagination {
-        top: 9.8%!important;
-        right: 8%;
-        left: auto!important;
         width: 200px!important;
         height: 20px;
+
+        @include vp-1023 {
+            width: 100%!important;
+        }
     }
 }

@@ -2,6 +2,7 @@
 /* --------------------------*/
 
 @import "global/_variables";
+@import "global/_mixins";
 @import "global/_fonts";
 @import "global/_reboot";
 @import "global/_normilize";
@@ -11,8 +12,10 @@
 /* Blocks */ 
 /* --------------------------*/
 
+@import "blocks/_animation";
 @import "blocks/_header";
 @import "blocks/_burger";
+@import "blocks/_burger-menu";
 @import "blocks/_footer";
 @import "blocks/_black-horse";
 @import "blocks/_banner";

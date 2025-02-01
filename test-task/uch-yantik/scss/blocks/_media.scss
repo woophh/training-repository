@@ -4,6 +4,10 @@
         position: relative;
         gap: 50px;
         width: 100%;
+
+        @media (max-width: 1719px) {
+            flex-direction: column-reverse;
+        }
     }
 
     &__ornament {
@@ -17,6 +21,19 @@
             height: 578px;
             top: 12%;
             right: -14.5%;
+
+            @include vp-1023 {
+                width: 612px;
+                height: 687px;
+            }
+
+            @include vp-767 {
+                top: auto;
+                bottom: 7%;
+                right: -29%;
+                width: 375px;
+                height: 421px;
+            }
         }
 
         &--2 {
@@ -24,6 +41,22 @@
             height: 860px;
             bottom: -102%;
             left: -17%; 
+
+            @media (max-width: 1719px) {
+                bottom: -50%;
+            }
+
+            @include vp-1023 {
+                width: 612px;
+                height: 687px;
+                bottom: -35%;
+            }
+
+            @include vp-767 {
+                left: -25%;
+                width: 375px;
+                height: 421px;
+            }
         }
     }
 
@@ -46,8 +79,21 @@
             justify-content: flex-end;
             gap: 5px;
             width: 100%;
-            min-height: 506px;
+            height: 89%;
             padding: 40px;
+
+            @media (max-width: 1719px) {
+                min-height: 860px;
+            }
+
+            @include vp-767 {
+                min-height: 300px;
+                padding: 15px;
+            }
+
+            @media (max-width: 490px) {
+                min-height: 250px;
+            }
         }
 
         &-img {
@@ -57,6 +103,12 @@
             top: 0;
             left: 0;
             width: 100%;
+            height: 100%;
+            object-fit: cover;
+
+            @include vp-767 {
+                border-radius: 25px;
+            }
         }
 
         &-icon {
@@ -66,6 +118,29 @@
             transform: translate(-50%, -50%);
             width: 36px;
             height: 36px;
+
+            @include vp-767 {
+                width: 30px;
+                height: 30px;
+            }
+
+            &__bg {
+                display: block;
+                width: 70px;
+                height: 70px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                border-radius: 50%;
+                background-color: $color-sauvignon;
+                opacity: 0.2;
+
+                @include vp-767 {
+                    width: 60px;
+                    height: 60px;
+                }
+            }
         }
 
         &-name {
@@ -75,6 +150,11 @@
             font-weight: 700;
             line-height: 46px;
             margin: 0;
+
+            @include vp-767 {
+                font-size: 18px;
+                line-height: 26px;
+            }
         }
 
         &-date {
@@ -85,12 +165,28 @@
             opacity: 0.5;
             margin: 0;
         }
+
+        @include vp-767 {
+            font-size: 16px;
+            line-height: 26px;
+        }
     }
 
     &__articles {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 25px;
+
+        @include vp-1023 {
+            overflow: auto;
+            gap: 15px;
+            margin: 0 -25px;
+            padding: 0 25px;
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
+        }
 
         &-heading {
             font-family: Soyuz Grotesk;
@@ -108,6 +204,14 @@
             padding: 15px 20px 10px;
             border-radius: 25px;
             min-height: 502px;
+
+            @media (max-width: 1719px) {
+                min-height: auto;
+            }
+
+            @include vp-1023 {
+                min-width: 300px;
+            }
 
             &-img {
                 &-wrapper {
@@ -135,10 +239,14 @@
             }
 
             &-text {
-                margin: 0;
+                margin: 0 0 35px;
                 font-size: 18px;
                 font-weight: 500;
                 line-height: 26px;
+
+                @include vp-1023 {
+                    margin: 0 0 20px;
+                }
             }
 
             &-btn {

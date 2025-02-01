@@ -1,8 +1,21 @@
 .burger {
+    display: block;
     width: 31px;
     height: 3px;
     background-color: $color-seal-brown-2;
     position: relative;
+    z-index: 7;
+    flex-shrink: 0;
+
+    &__btn {
+        padding: 0;
+        border: none;
+        display: flex;
+        align-items: center;
+        width: 31px;
+        height: 31px;
+        cursor: pointer;
+    }
 
     &::before,
     &::after {
@@ -11,6 +24,7 @@
         height: 3px;
         background-color: $color-seal-brown-2;
         position: absolute;
+        left: 0;
     }
 
     &::after {

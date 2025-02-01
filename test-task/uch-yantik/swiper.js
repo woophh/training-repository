@@ -1,13 +1,6 @@
-// import Swiper from 'swiper';
-// import { Navigation, Pagination } from 'swiper/modules';
-// import 'swiper/css';
-// import 'swiper/css/navigation';
-// import 'swiper/css/pagination';
-
-
 const food = new Swiper('.menu__food', {
     direction: 'horizontal',
-    slidesPerView: 4,
+    slidesPerView: 'auto',
     spaceBetween: 30,
     pagination: {
       el: '.menu__food-pagination',
@@ -16,7 +9,6 @@ const food = new Swiper('.menu__food', {
       nextEl: '.menu__food-button-next',
       prevEl: '.menu__food-button-prev',
     },
-
 });
 
 const sauce = new Swiper('.menu__sauce', {
