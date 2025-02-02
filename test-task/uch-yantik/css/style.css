@@ -400,6 +400,14 @@ template {
     transform: rotate(359deg);
   }
 }
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .header {
   padding: 30px 0 26px;
   margin: 0;
@@ -556,6 +564,8 @@ template {
   width: 31px;
   height: 31px;
   cursor: pointer;
+  position: relative;
+  z-index: 7;
 }
 .burger::before, .burger::after {
   content: "";
@@ -1474,6 +1484,8 @@ template {
   font-weight: 500;
   line-height: 26px;
   margin: 15px 0 0 0;
+  opacity: 0;
+  animation: opacity ease-in 0.2s forwards;
 }
 .about__mobile .about__part--actve {
   display: block;
@@ -1488,6 +1500,7 @@ template {
   color: #ffffff;
   opacity: 0.3;
   cursor: pointer;
+  transition: opacity ease-in 0.2s;
 }
 .about__btn--active {
   opacity: 1;
@@ -1851,7 +1864,7 @@ template {
   cursor: pointer;
   transition: background-color ease-in 0.2s;
 }
-.menu__btn:hover, .menu__btn:focus-visible {
+.menu__btn:hover, .menu__btn:focus-visible, .menu__btn--active {
   background-color: #FFF5EF;
 }
 .menu__navigate-food, .menu__navigate-sauce, .menu__navigate-drinks {
@@ -1885,6 +1898,7 @@ template {
   justify-content: center;
   left: auto;
   flex-shrink: 0;
+  cursor: pointer;
 }
 @media (max-width: 1023px) {
   .menu__food-button-prev, .menu__food-button-next, .menu__sauce-button-prev, .menu__sauce-button-next, .menu__drinks-button-prev, .menu__drinks-button-next {

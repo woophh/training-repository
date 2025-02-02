@@ -1,4 +1,4 @@
-const food = new Swiper('.menu__food', {
+export const food = new Swiper('.menu__food', {
     direction: 'horizontal',
     slidesPerView: 'auto',
     spaceBetween: 30,
@@ -11,7 +11,7 @@ const food = new Swiper('.menu__food', {
     },
 });
 
-const sauce = new Swiper('.menu__sauce', {
+export const sauce = new Swiper('.menu__sauce', {
   direction: 'horizontal',
   slidesPerView: 4,
   spaceBetween: 30,
@@ -24,7 +24,7 @@ const sauce = new Swiper('.menu__sauce', {
   },
 });
 
-const drinks = new Swiper('.menu__drinks', {
+export const drinks = new Swiper('.menu__drinks', {
   direction: 'horizontal',
   slidesPerView: 4,
   spaceBetween: 30,

@@ -102,6 +102,8 @@
             font-weight: 500;
             line-height: 26px;
             margin: 15px 0 0 0;
+            opacity: 0;
+            animation: opacity ease-in 0.2s forwards;
         }
 
         .about__part--actve {
@@ -119,6 +121,7 @@
         color: $color-white;
         opacity: 0.3;
         cursor: pointer;
+        transition: opacity ease-in 0.2s;
 
         &--active {
             opacity: 1;

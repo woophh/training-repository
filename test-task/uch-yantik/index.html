@@ -14,7 +14,7 @@
         <header class="header">
             <div class="container">
                 <div class="header__wrapper">
-                    <button class="burger__btn" aria-label="Открыть меню старницы">
+                    <button class="burger__btn" aria-label="Открыть меню старницы" id="burger">
                         <span class="header__burger burger"></span>
                     </button>
                     <a href="#" class="header__logo" aria-label="Перейти на главную">
@@ -254,9 +254,9 @@
                     <h2 class="menu__heading">меню</h2>
                     <div class="menu__top">
                         <div class="menu__btn-wrapper">
-                            <button class="menu__btn">выпечка</button>
-                            <button class="menu__btn">соусы</button>
-                            <button class="menu__btn">напитки</button>
+                            <button class="menu__btn menu__btn--active" id="menuFood">выпечка</button>
+                            <button class="menu__btn" id="menuSauce">соусы</button>
+                            <button class="menu__btn" id="menuDrinks">напитки</button>
                         </div>
                         <div class="menu__navigate-food menu__navigate-active">
                             <div class="menu__navigate-btn">
@@ -730,6 +730,6 @@
             </div>
         </div>
     </div>
-    <script src="swiper.js"></script>
+    <script type="module" src="JS/index.js"></script>
 </body>
 </html>
