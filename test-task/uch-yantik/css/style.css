@@ -382,7 +382,12 @@ template {
   height: 100%;
   max-width: 1820px;
   margin: 0 auto;
-  padding: 0 25px;
+  padding: 0 70px;
+}
+@media (max-width: 1185px) {
+  .container {
+    padding: 0 25px;
+  }
 }
 @media (max-width: 767px) {
   .container {
@@ -446,7 +451,7 @@ template {
   width: 251px;
   height: 80px;
 }
-@media (max-width: 1480px) {
+@media (max-width: 1576px) {
   .header__logo-icon {
     width: 201px;
     height: 64px;
@@ -555,10 +560,13 @@ template {
   position: relative;
   z-index: 7;
   flex-shrink: 0;
+  transition-property: background-color;
+  transition-delay: 0.3s;
 }
 .burger__btn {
   padding: 0;
   border: none;
+  background: transparent;
   display: flex;
   align-items: center;
   width: 31px;
@@ -575,11 +583,31 @@ template {
   position: absolute;
   left: 0;
 }
+.burger-menu--active ~ .burger__btn > .burger {
+  background-color: transparent;
+  transition-property: background-color;
+  transition-delay: 0.3s;
+}
+.burger-menu--active ~ .burger__btn > .burger::before {
+  top: 0;
+  transform: rotate(45deg);
+  transform-origin: center;
+  transition: top ease-in 0.2s, transform ease-in 0.3s 0.3s;
+}
+.burger-menu--active ~ .burger__btn > .burger::after {
+  top: 0;
+  transform: rotate(-45deg);
+  transform-origin: center;
+  transition: top ease-in 0.2s, transform ease-in 0.3s 0.3s;
+}
 .burger::after {
   top: 10px;
 }
 .burger::before {
   top: -10px;
+}
+.burger::before, .burger::after {
+  transition: transform ease-in 0.3s, top ease-in 0.2s 0.3s;
 }
 
 .burger-menu {
@@ -860,7 +888,7 @@ template {
   position: absolute;
   right: 34%;
 }
-@media (max-width: 1450px) {
+@media (max-width: 1476px) {
   .footer::before {
     display: none;
   }
@@ -1512,7 +1540,7 @@ template {
   gap: 50px;
   width: 100%;
 }
-@media (max-width: 1719px) {
+@media (max-width: 1175px) {
   .media__wrapper {
     flex-direction: column-reverse;
   }
@@ -1590,9 +1618,9 @@ template {
   height: 89%;
   padding: 40px;
 }
-@media (max-width: 1719px) {
+@media (max-width: 1175px) {
   .media__video-content {
-    min-height: 860px;
+    min-height: 615px;
   }
 }
 @media (max-width: 767px) {
@@ -1683,8 +1711,7 @@ template {
   }
 }
 .media__articles {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
   gap: 25px;
 }
 @media (max-width: 1023px) {
@@ -1714,9 +1741,12 @@ template {
   border-radius: 25px;
   min-height: 502px;
 }
-@media (max-width: 1719px) {
+@media (max-width: 1700px) {
   .media__articles-card {
     min-height: auto;
+  }
+  .media__articles-card:last-child {
+    display: none;
   }
 }
 @media (max-width: 1023px) {
@@ -1767,6 +1797,7 @@ template {
   font-size: 18px;
   font-weight: 600;
   line-height: 26px;
+  text-align: center;
 }
 .media__articles-card-btn-icon {
   width: 34px;
@@ -1834,9 +1865,6 @@ template {
 .menu__food, .menu__sauce, .menu__drinks {
   display: none;
 }
-.menu__active {
-  display: block;
-}
 .menu__btn-wrapper {
   display: flex;
   gap: 10px;
@@ -1867,20 +1895,20 @@ template {
 .menu__btn:hover, .menu__btn:focus-visible, .menu__btn--active {
   background-color: #FFF5EF;
 }
-.menu__navigate-food, .menu__navigate-sauce, .menu__navigate-drinks {
+.menu__navigate {
   gap: 20px;
   align-items: center;
   display: none;
 }
 @media (max-width: 1023px) {
-  .menu__navigate-food, .menu__navigate-sauce, .menu__navigate-drinks {
+  .menu__navigate {
     position: absolute;
     bottom: 0;
     right: 15px;
     flex-direction: row-reverse;
   }
 }
-.menu__navigate-active {
+.menu__navigate--active {
   display: flex;
 }
 .menu__navigate-btn {

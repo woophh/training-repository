@@ -6,10 +6,13 @@
     position: relative;
     z-index: 7;
     flex-shrink: 0;
+    transition-property: background-color;
+    transition-delay: 0.3s;
 
     &__btn {
         padding: 0;
         border: none;
+        background: transparent;
         display: flex;
         align-items: center;
         width: 31px;
@@ -29,11 +32,39 @@
         left: 0;
     }
 
+    .burger-menu--active ~ .burger__btn > & {
+        background-color: transparent;
+        transition-property: background-color;
+        transition-delay: 0.3s;
+
+        &::before {
+            top: 0;
+            transform: rotate(45deg);
+            transform-origin: center;
+            transition: top ease-in 0.2s, 
+            transform ease-in 0.3s 0.3s;
+        }
+
+        &::after {
+            top: 0;
+            transform: rotate(-45deg);
+            transform-origin: center;
+            transition: top ease-in 0.2s, 
+            transform ease-in 0.3s 0.3s;
+        }
+    }
+
     &::after {
         top: 10px;
     }
 
     &::before {
         top: -10px;
+    }
+
+    &::before,
+    &::after {
+        transition: transform ease-in 0.3s,
+         top ease-in 0.2s 0.3s;
     }
 }

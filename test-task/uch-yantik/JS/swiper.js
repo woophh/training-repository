@@ -13,7 +13,7 @@ export const food = new Swiper('.menu__food', {
 
 export const sauce = new Swiper('.menu__sauce', {
   direction: 'horizontal',
-  slidesPerView: 4,
+  slidesPerView: 'auto',
   spaceBetween: 30,
   pagination: {
      el: '.menu__sauce-pagination',
@@ -26,7 +26,7 @@ export const sauce = new Swiper('.menu__sauce', {
 
 export const drinks = new Swiper('.menu__drinks', {
   direction: 'horizontal',
-  slidesPerView: 4,
+  slidesPerView: 'auto',
   spaceBetween: 30,
   pagination: {
      el: '.menu__drinks-pagination',

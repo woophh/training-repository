@@ -3,7 +3,11 @@
     height: 100%;
     max-width: 1820px;
     margin: 0 auto;
-    padding: 0 25px;
+    padding: 0 70px;
+
+    @media (max-width: 1185px) {
+        padding: 0 25px;
+    }
 
     @include vp-767 {
         padding: 0 15px;

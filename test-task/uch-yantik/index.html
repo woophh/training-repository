@@ -14,28 +14,6 @@
         <header class="header">
             <div class="container">
                 <div class="header__wrapper">
-                    <button class="burger__btn" aria-label="Открыть меню старницы" id="burger">
-                        <span class="header__burger burger"></span>
-                    </button>
-                    <a href="#" class="header__logo" aria-label="Перейти на главную">
-                        <img class="header__logo-icon" src="img/sprite/icon-logo.svg" alt="Логотип кафе">
-                    </a>
-                    <div class="header__nav-list">
-                        <a href="#homepage" class="header__nav-list-link">главная</a>
-                        <a href="#about" class="header__nav-list-link">о&nbsp;нас</a>
-                        <a href="#menu" class="header__nav-list-link">меню</a>
-                        <a href="#contacts" class="header__nav-list-link">контакты</a>
-                    </div>
-                    <div class="header__address-wrapper">
-                        <div class="header__address">
-                            <img class="header__address-icon" src="img/sprite/icon-location.svg" alt="Иконка адреса">
-                            <span class="header__address-text">Ул. Севастопольская&nbsp;4, Симферополь</span>
-                        </div>
-                        <a href="#map" class="header__address-link">
-                            <img class="header__address-icon" src="img/sprite/icon-location.svg" alt="Иконка адреса">
-                            <span class="header__address-link-text">Смотреть на&nbsp;карте</span>
-                        </a>
-                    </div>
                     <div class="burger-menu">
                         <div class="container">
                             <svg class="burger-menu__ornament burger-menu__ornament--1">
@@ -81,6 +59,28 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <button class="burger__btn" aria-label="Открыть меню старницы" id="burger">
+                        <span class="header__burger burger"></span>
+                    </button>
+                    <a href="#" class="header__logo" aria-label="Перейти на главную">
+                        <img class="header__logo-icon" src="img/sprite/icon-logo.svg" alt="Логотип кафе">
+                    </a>
+                    <div class="header__nav-list">
+                        <a href="#homepage" class="header__nav-list-link">главная</a>
+                        <a href="#about" class="header__nav-list-link">о&nbsp;нас</a>
+                        <a href="#menu" class="header__nav-list-link">меню</a>
+                        <a href="#contacts" class="header__nav-list-link">контакты</a>
+                    </div>
+                    <div class="header__address-wrapper">
+                        <div class="header__address">
+                            <img class="header__address-icon" src="img/sprite/icon-location.svg" alt="Иконка адреса">
+                            <span class="header__address-text">Ул. Севастопольская&nbsp;4, Симферополь</span>
+                        </div>
+                        <a href="#map" class="header__address-link">
+                            <img class="header__address-icon" src="img/sprite/icon-location.svg" alt="Иконка адреса">
+                            <span class="header__address-link-text">Смотреть на&nbsp;карте</span>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -254,11 +254,11 @@
                     <h2 class="menu__heading">меню</h2>
                     <div class="menu__top">
                         <div class="menu__btn-wrapper">
-                            <button class="menu__btn menu__btn--active" id="menuFood">выпечка</button>
-                            <button class="menu__btn" id="menuSauce">соусы</button>
-                            <button class="menu__btn" id="menuDrinks">напитки</button>
+                            <button class="menu__btn" onclick="openMenu(event, 'food')" id="default">выпечка</button>
+                            <button class="menu__btn" onclick="openMenu(event, 'sauce')">соусы</button>
+                            <button class="menu__btn" onclick="openMenu(event, 'drinks')">напитки</button>
                         </div>
-                        <div class="menu__navigate-food menu__navigate-active">
+                        <div class="menu__navigate" id="food-navigate">
                             <div class="menu__navigate-btn">
                                 <div class="menu__food-button-prev">
                                     <img src="img/sprite/icon-arrow-down.svg" alt="стрелка назад">
@@ -269,7 +269,7 @@
                             </div>
                             <div class="menu__food-pagination"></div>
                         </div>
-                        <div class="menu__navigate-sauce">
+                        <div class="menu__navigate" id="sauce-navigate">
                             <div class="menu__navigate-btn">
                                 <div class="menu__sauce-button-prev">
                                     <img src="img/sprite/icon-arrow-down.svg" alt="стрелка назад">
@@ -280,7 +280,7 @@
                             </div>
                             <div class="menu__sauce-pagination"></div>
                         </div>
-                        <div class="menu__navigate-drinks">
+                        <div class="menu__navigate" id="drinks-navigate">
                             <div class="menu__navigate-btn">
                                 <div class="menu__drinks-button-prev">
                                     <img src="img/sprite/icon-arrow-down.svg" alt="стрелка назад">
@@ -292,7 +292,7 @@
                             <div class="menu__drinks-pagination"></div>
                         </div>
                     </div>
-                    <div class="menu__food menu__active">
+                    <div class="tabcontent menu__food" id="food">
                         <div class="swiper-wrapper">
                           <div class="swiper-slide">
                                 <div class="menu-item">
@@ -416,7 +416,7 @@
                         </div>
                     </div>
                     <!--Соусы-->
-                   <div class="menu__sauce">
+                   <div class="tabcontent menu__sauce" id="sauce">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="menu-item">
@@ -449,7 +449,7 @@
                         </div>
                     </div>
                     <!--Напитки-->
-                    <div class="menu__drinks">
+                    <div class="tabcontent menu__drinks" id="drinks">
                         <div class="swiper-wrapper">
                           <div class="swiper-slide">
                                 <div class="menu-item">

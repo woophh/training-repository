@@ -38,10 +38,6 @@
         display: none;
     }
 
-    &__active {
-        display: block;
-    }
-
     &__btn-wrapper {
         display: flex;
         gap: 10px;
@@ -81,22 +77,19 @@
     }
 
     &__navigate {
-        &-food,
-        &-sauce,
-        &-drinks {
-            gap: 20px;
-            align-items: center;
-            display: none;
+        gap: 20px;
+        align-items: center;
+        display: none;
 
-            @include vp-1023 {
-                position: absolute;
-                bottom: 0;
-                right: 15px;
-                flex-direction: row-reverse;
-            }
+        @include vp-1023 {
+            position: absolute;
+            bottom: 0;
+            right: 15px;
+            flex-direction: row-reverse;
         }
 
-        &-active {
+
+        &--active {
             display: flex;
         }
 
